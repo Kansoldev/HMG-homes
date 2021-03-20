@@ -1,0 +1,43 @@
+.page-wrapper {
+    background-color: #edf1f5;
+    position: relative;
+
+    @media (min-width: 1024px) {
+        margin-left: 220px;
+    }
+}
+
+.page-titles {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    margin: 75px -14px 25px;
+
+    h4 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+
+        li a {
+            color: $primary-color;
+        }
+
+        &-item {
+            + .breadcrumb-item::before {
+                content: "\e649";
+                font-family: themify;
+                color: #ced4da;
+                font-size: 11px;
+                margin-top: 2.3px;
+            }
+        }
+
+        &-item.active {
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+}

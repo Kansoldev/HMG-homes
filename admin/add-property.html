@@ -4,8 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="author" content="Yahaya Oyinkansola" />
         <link rel="icon" href="../img/logo.png" />
         <title>HMG Homes</title>
         <!-- Morris Chart CSS -->
@@ -16,59 +15,7 @@
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
         <!-- Custom CSS -->
         <link href="assets/css/main.css" rel="stylesheet" />
-        <link href="assets/css/style.css" rel="stylesheet" />
         <link href="assets/css/utilities.css" rel="stylesheet" />
-        <link href="assets/css/add-property.css" rel="stylesheet" />
-
-        <style>
-            .features-list {
-                overflow: hidden;
-                margin-top: 30px;
-            }
-
-            .features-list .feature-item {
-                width: 25%;
-                float: left;
-            }
-
-            @media only screen and (max-width: 767px) {
-                .features-list .feature-item {
-                    width: 100%;
-                    float: none;
-                }
-            }
-
-            .features-list .feature-item label {
-                font-size: 14px;
-                color: #777;
-                font-weight: 500;
-                position: relative;
-                padding-left: 26px;
-                cursor: pointer;
-                display: block;
-                margin-bottom: 20px;
-            }
-
-            .features-list .feature-item label input {
-                position: absolute;
-                visibility: hidden;
-            }
-
-            .features-list .feature-item label input:checked ~ span {
-                background-color: #13506f;
-            }
-
-            .features-list .feature-item label .checkbox {
-                position: absolute;
-                left: 0;
-                top: 4px;
-                width: 14px;
-                height: 14px;
-                border: 1px solid #13506f;
-                border-radius: 2px;
-                content: "";
-            }
-        </style>
     </head>
 
     <body class="skin-blue fixed-layout">
@@ -79,8 +26,8 @@
                         <a class="navbar-brand" href="index.html">
                             <img
                                 src="../img/logo-white.png"
-                                alt="homepage"
-                                class="logo"
+                                alt="homepage logo"
+                                class="topbar-logo"
                             />
                         </a>
                     </div>
@@ -274,10 +221,7 @@
 
                                     <div class="dropdown-divider"></div>
 
-                                    <a
-                                        href="pages-login.html"
-                                        class="dropdown-item"
-                                    >
+                                    <a href="#" class="dropdown-item">
                                         <i class="fa fa-power-off"></i>
                                         Logout
                                     </a>
@@ -308,23 +252,44 @@
                             </li>
 
                             <li>
-                                <a class="waves-effect waves-dark" href="#"
+                                <a
+                                    class="has-arrow waves-effect waves-dark"
+                                    href="javascript:void(0)"
+                                    aria-expanded="false"
                                     ><i class="ti-layout-grid2"></i
                                     ><span class="hide-menu"
-                                        >Properties</span
+                                        >My Properties</span
                                     ></a
                                 >
-                            </li>
 
-                            <li class="active">
-                                <a
-                                    class="waves-effect waves-dark"
-                                    href="realestate-add-property.html"
-                                    ><i class="ti-support"></i
-                                    ><span class="hide-menu"
-                                        >Add Property</span
-                                    ></a
-                                >
+                                <ul aria-expanded="false" class="collapse">
+                                    <li>
+                                        <a href="app-calendar.html">Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="app-chat.html">Chat app</a>
+                                    </li>
+                                    <li>
+                                        <a href="app-ticket.html"
+                                            >Support Ticket</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="app-contact.html"
+                                            >Contact / Employee</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="app-contact2.html"
+                                            >Contact Grid</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="app-contact-detail.html"
+                                            >Contact Detail</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
 
                             <li>
@@ -335,18 +300,15 @@
                                     ><i class="ti-email"></i
                                     ><span class="hide-menu">Inbox</span></a
                                 >
-
                                 <ul aria-expanded="false" class="collapse">
                                     <li>
                                         <a href="app-email.html">Mailbox</a>
                                     </li>
-
                                     <li>
                                         <a href="app-email-detail.html"
                                             >Mailbox Detail</a
                                         >
                                     </li>
-
                                     <li>
                                         <a href="app-compose.html"
                                             >Compose Mail</a
@@ -355,13 +317,13 @@
                                 </ul>
                             </li>
 
-                            <li>
+                            <li class="active">
                                 <a
                                     class="waves-effect waves-dark"
-                                    href="realestate-property-detail.html"
-                                    ><i class="ti-check-box"></i
+                                    href="add-property.html"
+                                    ><i class="ti-support"></i
                                     ><span class="hide-menu"
-                                        >Property Detail</span
+                                        >Add Property</span
                                     ></a
                                 >
                             </li>
@@ -369,7 +331,7 @@
                             <li>
                                 <a
                                     class="waves-effect waves-dark text-danger"
-                                    href="pages-login.html"
+                                    href="#"
                                     aria-expanded="false"
                                     ><i class="ti-power-off text-danger"></i
                                     ><span class="hide-menu">Log Out</span></a
@@ -387,18 +349,18 @@
             <div class="page-wrapper">
                 <div class="container-fluid">
                     <!-- Bread crumb and right sidebar toggle -->
-                    <div class="row page-titles">
+                    <div class="row page-titles" style="margin-top: 65px">
                         <div class="col-md-12 align-self-center text-right">
                             <div
-                                class="d-block d-md-flex justify-content-end align-items-center"
+                                class="d-block d-md-flex justify-content-end align-items-center mt-2"
                             >
-                                <ol class="breadcrumb">
+                                <ol class="breadcrumb bg-white p-0 m-0">
                                     <li class="breadcrumb-item">
                                         <a href="javascript:void(0)">Home</a>
                                     </li>
 
                                     <li class="breadcrumb-item active">
-                                        Add property
+                                        Add Property
                                     </li>
                                 </ol>
                             </div>
@@ -901,13 +863,6 @@
 
                                         <hr />
 
-                                        <h3
-                                            class="text-center my-4 text-uppercase"
-                                            style="color: #13506f"
-                                        >
-                                            Property Amenities
-                                        </h3>
-
                                         <!-- AMENITIES -->
                                         <div class="features-list">
                                             <div class="feature-item">
@@ -1110,9 +1065,25 @@
                                             </div>
                                         </div>
 
+                                        <div class="form-group">
+                                            <label
+                                                for="e-features"
+                                                class="text-uppercase font-weight-bold mt-4"
+                                                >Extra
+                                                Information(Optional)</label
+                                            >
+
+                                            <textarea
+                                                class="form-control"
+                                                rows="10"
+                                                id="e-features"
+                                                name="extra"
+                                            ></textarea>
+                                        </div>
+
                                         <button
                                             type="submit"
-                                            class="btn btn-primary btn-lg w-auto w-md-25 p-2 px-md-3 waves-effect waves-light"
+                                            class="btn btn-primary btn-lg p-2 px-md-5 waves-effect"
                                         >
                                             Add Property
                                         </button>

@@ -1,0 +1,14 @@
+.footer {
+    color: $primary-color;
+    padding: 18px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        margin-left: 220px;
+    }
+}

@@ -19,22 +19,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/bootstrap-select.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/elegant-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <style>
-            .form-control:focus {
-                box-shadow: 0;
-            }
-
-            .error-message {
-                color: #ff0000;
-                padding: 6px;
-            }
-
-            .error-border {
-                border: 1px solid red !important;
-            }
-        </style>
     </head>
 
     <body>
@@ -51,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <!-- Preloader Start -->
+        <!-- Preloader End -->
 
         <!-- Header Area -->
         <header id="site-header" class="fixed-top">
@@ -256,7 +241,11 @@
                         </select>
                     </span>
 
-                    <button type="submit" id="submit" class="btn btn-search">
+                    <button
+                        type="submit"
+                        id="submit"
+                        class="btn btn-primary search"
+                    >
                         Search
                     </button>
                 </form>
@@ -302,6 +291,16 @@
                                     <span class="icon_pin_alt"></span> 3 Middle
                                     Winchendon Rd, Rindge, NH 03461
                                 </p>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-object-group"></i> 2,
+                                        283
+                                    </li>
+                                    <li><i class="fa fa-bathtub"></i>03</li>
+                                    <li><i class="fa fa-bed"></i>05</li>
+                                    <li><i class="fa fa-automobile"></i>01</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -334,6 +333,16 @@
                                     <span class="icon_pin_alt"></span> Gut
                                     No.102, Opp. HP Petrol Pump, Karjat
                                 </p>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-object-group"></i> 2,
+                                        283
+                                    </li>
+                                    <li><i class="fa fa-bathtub"></i>03</li>
+                                    <li><i class="fa fa-bed"></i>05</li>
+                                    <li><i class="fa fa-automobile"></i>01</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -366,6 +375,16 @@
                                     <span class="icon_pin_alt"></span> No. 15,
                                     16, 17-1A And 17-2, Rasayani, Rasayani
                                 </p>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-object-group"></i> 2,
+                                        283
+                                    </li>
+                                    <li><i class="fa fa-bathtub"></i>03</li>
+                                    <li><i class="fa fa-bed"></i>05</li>
+                                    <li><i class="fa fa-automobile"></i>01</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -396,8 +415,18 @@
 
                                 <p>
                                     <span class="icon_pin_alt"></span> 12 Pt at
-                                    Shedung, Panvel, Raigarh, Navi Mumbai
+                                    Shedung,nvel, Raigarh, Navi Mumbai
                                 </p>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-object-group"></i> 2,
+                                        283
+                                    </li>
+                                    <li><i class="fa fa-bathtub"></i>03</li>
+                                    <li><i class="fa fa-bed"></i>05</li>
+                                    <li><i class="fa fa-automobile"></i>01</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -430,6 +459,16 @@
                                     <span class="icon_pin_alt"></span> Badlapur
                                     East, Beyond Thane
                                 </p>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-object-group"></i> 2,
+                                        283
+                                    </li>
+                                    <li><i class="fa fa-bathtub"></i>03</li>
+                                    <li><i class="fa fa-bed"></i>05</li>
+                                    <li><i class="fa fa-automobile"></i>01</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -462,6 +501,16 @@
                                     <span class="icon_pin_alt"></span> No.7,
                                     Sector- 11, Ghansoli, Mumbai, Navi Mumbai
                                 </p>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-object-group"></i> 2,
+                                        283
+                                    </li>
+                                    <li><i class="fa fa-bathtub"></i>03</li>
+                                    <li><i class="fa fa-bed"></i>05</li>
+                                    <li><i class="fa fa-automobile"></i>01</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -472,8 +521,8 @@
                     class="btn btn-primary"
                     style="padding: 10px 35px"
                 >
-                    See more properties&nbsp;&nbsp;<span
-                        class="fa fa-long-arrow-right right-icon"
+                    View more properties&nbsp;&nbsp;<span
+                        class="fa fa-long-arrow-right"
                     ></span>
                 </a>
             </div>
@@ -1066,6 +1115,7 @@
                 });
 
                 $(window).on("load", function () {
+                    $(".loader").fadeOut();
                     $("#preloader-active").delay(450).fadeOut();
                 });
             });
