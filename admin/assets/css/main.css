@@ -680,4 +680,14 @@ textarea.form-control {
   border-radius: 2px;
 }
 
+.dropzone {
+  min-height: 0;
+  border: 3px dashed #13506f;
+}
+.dropzone .dz-message .dz-button {
+  color: #13506f;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -358,14 +358,10 @@ button {
 
 .header-relative {
   position: relative;
-  top: -30px;
-  left: 45px;
-  display: none;
+  top: -26px;
 }
 @media (min-width: 768px) {
   .header-relative {
-    top: -25px;
-    left: 80px;
     display: block;
   }
 }
@@ -389,14 +385,16 @@ button {
 }
 
 .user-menu {
-  position: relative;
-  display: inline-block;
   cursor: pointer;
-  margin-right: 20px;
-  top: 9px;
-  padding-left: 30px;
-  padding-right: 22px;
-  margin-left: 25px;
+  display: inline-block;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .user-menu {
+    top: 23px;
+    padding-left: 30px;
+    padding-right: 22px;
+  }
 }
 .user-menu .user-name {
   transition: 0.2s;
@@ -406,11 +404,16 @@ button {
   max-width: 145px;
   color: #fff;
 }
+@media (min-width: 768px) {
+  .user-menu .user-name {
+    margin-top: 10px;
+  }
+}
 .user-menu .user-name span {
   display: inline-block;
   position: absolute;
   left: -25px;
-  top: -7px;
+  top: -2px;
   width: 32px;
   font-size: 27px;
   margin-top: 1px;
@@ -418,15 +421,15 @@ button {
   border-radius: 50%;
 }
 .user-menu .user-name span img {
-  width: 100%;
   display: inline-block;
+  width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
 .user-menu ul {
   position: absolute;
   top: 55px;
-  right: 19px;
+  right: 18px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   width: 200px;
@@ -438,19 +441,14 @@ button {
   opacity: 0;
   z-index: 10;
 }
-@media (min-width: 768px) {
-  .user-menu ul {
-    right: 18px;
-  }
-}
 .user-menu ul::before {
   content: "";
   position: absolute;
   top: 0;
   right: 20px;
   border: 7px solid #fff;
-  transform-origin: 0 0;
   transform: rotate(135deg);
+  transform-origin: 0 0;
   box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.05);
 }
 .user-menu ul li {
@@ -460,9 +458,9 @@ button {
   border-top: 1px solid rgba(3, 80, 111, 0.1);
 }
 .user-menu ul li a {
-  padding: 2px 0;
-  display: block;
   color: #13506f;
+  display: block;
+  padding: 2px 0;
   transition: 0.2s;
 }
 .user-menu.active ul {
@@ -1172,7 +1170,7 @@ span.input-group-btn {
 }
 .currency-converter #result {
   color: #13506f;
-  font-size: 2.625rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 .currency-converter .form-control:focus {
@@ -1797,6 +1795,58 @@ ul.page-pagination li span.current {
   font-weight: 500;
 }
 
+.hs-slider .hs-item {
+  height: 500px;
+}
+@media only screen and (max-width: 767px) {
+  .hs-slider .hs-item {
+    height: auto;
+    padding: 113px 15px;
+  }
+}
+.hs-slider .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hs-slider.owl-carousel .owl-nav button {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #03506f;
+  border-radius: 50%;
+  line-height: 43px;
+  font-size: 26px;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .hs-slider.owl-carousel .owl-nav button {
+    height: 40px;
+    width: 40px;
+  }
+}
+.hs-slider.owl-carousel .owl-nav button.owl-prev {
+  left: -30px;
+}
+@media (max-width: 767px) {
+  .hs-slider.owl-carousel .owl-nav button.owl-prev {
+    left: -10px;
+  }
+}
+.hs-slider.owl-carousel .owl-nav button.owl-next {
+  right: -30px;
+}
+@media (max-width: 767px) {
+  .hs-slider.owl-carousel .owl-nav button.owl-next {
+    right: -10px;
+  }
+}
+
 input.parsley-error {
   border: 1px solid #ff7b54;
 }
@@ -1849,7 +1899,6 @@ input.parsley-error:focus {
   display: block;
   font-size: 1rem;
   font-weight: 400;
-  padding-bottom: 30px;
   color: #13506f;
   line-height: 1.2;
   text-align: center;

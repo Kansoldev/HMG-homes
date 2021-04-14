@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HMG Homes</title>
+        <meta name="author" content="Yahaya Oyinkansola" />
+        <meta
+            name="description"
+            content="HMG Homes is a Luxury Real Estate Company. At HMG Homes, we focus on bringing our esteemed
+            customers a combination of style and comfort."
+        />
+        <meta
+            name="keywords"
+            content="real estate, houses, hotels, rentals, apartments"
+        />
+        <link rel="icon" href="img/logo.png" />
+        <link rel="canonical" href="index.html" />
+        <link rel="stylesheet" href="css/daterangepicker.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+        <link rel="stylesheet" href="css/fontawesome.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/hotels.css" />
+        <link rel="stylesheet" href="css/hotel-cards.css" />
+    </head>
+
+    <body>
+        <header id="site-header" class="fixed-top">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg stroke px-0">
+                    <a href="index.html">
+                        <img
+                            src="img/logo-white.png"
+                            class="site-logo"
+                            alt="logo"
+                        />
+                    </a>
+
+                    <div class="header-relative order-lg-3 d-block d-lg-none">
+                        <div class="user-menu">
+                            <div class="user-name">
+                                <span>
+                                    <i class="fa fa-user-circle-o"></i>
+                                </span>
+
+                                <div class="user-name-title">Hi, user!</div>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="login.html">Log in</a>
+                                </li>
+
+                                <li>
+                                    <a href="signup.html">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button
+                        class="navbar-toggler collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span
+                            class="navbar-toggler-icon fa icon-expand fa-bars"
+                        ></span>
+                        <span
+                            class="navbar-toggler-icon fa icon-close fa-times"
+                        ></span>
+                    </button>
+
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarTogglerDemo02"
+                    >
+                        <ul class="navbar-nav mx-lg-auto">
+                            <div class="dropdown-container">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Buy</a>
+                                </li>
+
+                                <div class="dropdown-content">
+                                    <div class="dropdown-content-item">
+                                        <h4>Homes for Sale</h4>
+
+                                        <a href="homesforsale.html"
+                                            >Homes for Sale</a
+                                        >
+                                        <a href="#">New Home Construction</a>
+                                        <a href="#">Work with your budget</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sell</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rent/Lease</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Luxury Apartments</a
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="myhome.html"
+                                    >My Home</a
+                                >
+                            </li>
+                        </ul>
+
+                        <div class="mt-3 mt-md-0 d-none d-lg-flex">
+                            <a href="login.html" class="btn" id="login">
+                                Login
+                            </a>
+
+                            <a href="signup.html" class="btn" id="signup">
+                                Signup
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero-section d-flex align-items-center">
+            <div class="hero-parallax">
+                <div
+                    class="bg"
+                    data-bg="img/brandon-griggs-wR11KBaB86U-unsplash.jpg"
+                ></div>
+                <div class="overlay op7"></div>
+            </div>
+
+            <div class="hero-section-wrap fl-wrap">
+                <div class="container-fluid">
+                    <div class="home-intro">
+                        <h2>Find apartments with HMG Homes</h2>
+
+                        <h4
+                            class="text-center text-white mt-3"
+                            style="font-weight: 300"
+                        >
+                            Start exploring the best luxury apartments around
+                            the globe
+                        </h4>
+                    </div>
+
+                    <div class="main-search-input-wrap">
+                        <div class="main-search-input fl-wrap">
+                            <div
+                                class="main-search-input-item location"
+                                id="autocomplete-container"
+                            >
+                                <span class="inpt_dec">
+                                    <i
+                                        class="fa fa-map-marker fs-13 text-primary"
+                                    ></i>
+                                </span>
+
+                                <input
+                                    type="text"
+                                    placeholder="Where are you going?"
+                                    class="autocomplete-input"
+                                    value=""
+                                />
+
+                                <a href="#">
+                                    <i class="far fa-dot-circle fs-13"></i>
+                                </a>
+                            </div>
+
+                            <div
+                                class="main-search-input-item main-date-parent main-search-input-item_small"
+                            >
+                                <span class="inpt_dec"
+                                    ><i class="fa fa-calendar-check"></i
+                                ></span>
+
+                                <input
+                                    type="text"
+                                    placeholder="Check in  -  Check out"
+                                    name="main-input-search"
+                                    value=""
+                                />
+
+                                <div
+                                    class="daterangepicker ltr show-calendar opensright"
+                                >
+                                    <div class="ranges"></div>
+
+                                    <div class="drp-calendar left">
+                                        <div class="calendar-table"></div>
+
+                                        <div
+                                            class="calendar-time"
+                                            style="display: none"
+                                        ></div>
+                                    </div>
+
+                                    <div class="drp-calendar right">
+                                        <div class="calendar-table"></div>
+
+                                        <div
+                                            class="calendar-time"
+                                            style="display: none"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-search-input-item">
+                                <div class="qty-dropdown fl-wrap">
+                                    <div class="qty-dropdown-header fl-wrap">
+                                        <i class="fa fa-users mr-2"></i> No of
+                                        persons
+                                    </div>
+
+                                    <div class="qty-dropdown-content fl-wrap">
+                                        <div class="quantity-item">
+                                            <label>
+                                                <i
+                                                    class="fa fa-male text-primary"
+                                                ></i>
+                                                Adults
+                                            </label>
+
+                                            <div class="quantity">
+                                                <input
+                                                    type="number"
+                                                    min="1"
+                                                    max="30"
+                                                    value="1"
+                                                />
+
+                                                <div class="quantity-nav">
+                                                    <div
+                                                        class="quantity-button quantity-up"
+                                                    >
+                                                        +
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-button quantity-down"
+                                                    >
+                                                        -
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="quantity-item">
+                                            <label>
+                                                <i
+                                                    class="fa fa-child text-primary"
+                                                ></i>
+                                                Children
+                                            </label>
+
+                                            <div class="quantity">
+                                                <input
+                                                    type="number"
+                                                    min="0"
+                                                    max="10"
+                                                    value="0"
+                                                />
+
+                                                <div class="quantity-nav">
+                                                    <div
+                                                        class="quantity-button quantity-up"
+                                                    >
+                                                        +
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-button quantity-down"
+                                                    >
+                                                        -
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="main-search-button btn btn-primary">
+                                Search <i class="ml-1 fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="displaying-hotels mt-5">
+            <div class="container-fluid">
+                <h2
+                    class="mb-4 text-center text-uppercase text-primary font-weight-bold"
+                >
+                    Explore Hotels
+                </h2>
+
+                <div class="row justify-content-around">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+                        <div
+                            class="card mb-1 transition-3d-hover shadow-hover-2 tab-card h-100"
+                        >
+                            <div class="position-relative mb-2">
+                                <a
+                                    href="#"
+                                    class="d-block gradient-overlay-half-bg-gradient-v5"
+                                >
+                                    <img
+                                        class="card-img-top"
+                                        src="img/hotels/img1.jpg"
+                                        alt="img"
+                                    />
+                                </a>
+
+                                <div
+                                    class="position-absolute top-0 left-0 pt-4 pl-3"
+                                >
+                                    <span
+                                        class="badge badge-pill bg-white text-primary px-4 py-2 font-size-14 font-weight-normal"
+                                        >Featured</span
+                                    >
+                                </div>
+
+                                <div
+                                    class="position-absolute top-0 right-0 pt-5 pr-3"
+                                >
+                                    <button
+                                        type="button"
+                                        class="btn btn-sm btn-icon text-white rounded-circle"
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title=""
+                                        data-original-title="Save for later"
+                                    >
+                                        <span
+                                            class="flaticon-valentine-heart"
+                                        ></span>
+                                    </button>
+                                </div>
+
+                                <div
+                                    class="position-absolute bottom-8 left-0 right-0"
+                                >
+                                    <div class="px-3 pb-2">
+                                        <h2
+                                            class="h5 text-white mb-0 font-weight-bold"
+                                        >
+                                            <small class="mr-2">From</small
+                                            >£350.00
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body px-4 py-2">
+                                <a href="#" class="d-block">
+                                    <div
+                                        class="mb-1 d-flex align-items-center font-size-14 text-gray-1"
+                                    >
+                                        <i
+                                            class="fa fa-map-marker text-primary mr-2"
+                                        ></i>
+
+                                        Greater London, United Kingdom
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    class="card-title font-size-17 text-primary mb-0 font-weight-bold"
+                                    >Stonehenge, Windsor Castle,<br />and Bath
+                                    from London</a
+                                >
+
+                                <div class="my-2">
+                                    <div
+                                        class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary"
+                                    >
+                                        <div class="green-lighter mr-2">
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+                        <div
+                            class="card mb-1 transition-3d-hover shadow-hover-2 tab-card h-100"
+                        >
+                            <div class="position-relative mb-2">
+                                <a
+                                    href="#"
+                                    class="d-block gradient-overlay-half-bg-gradient-v5"
+                                >
+                                    <img
+                                        class="card-img-top"
+                                        src="img/hotels/img4.jpg"
+                                        alt="img"
+                                    />
+                                </a>
+
+                                <div
+                                    class="position-absolute top-0 left-0 pt-4 pl-3"
+                                >
+                                    <span
+                                        class="badge badge-pill bg-white text-primary px-4 py-2 font-size-14 font-weight-normal"
+                                        >Featured</span
+                                    >
+                                </div>
+
+                                <div
+                                    class="position-absolute top-0 right-0 pt-5 pr-3"
+                                >
+                                    <button
+                                        type="button"
+                                        class="btn btn-sm btn-icon text-white rounded-circle"
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title=""
+                                        data-original-title="Save for later"
+                                    >
+                                        <span
+                                            class="flaticon-valentine-heart"
+                                        ></span>
+                                    </button>
+                                </div>
+
+                                <div
+                                    class="position-absolute bottom-8 left-0 right-0"
+                                >
+                                    <div class="px-3 pb-2">
+                                        <h2
+                                            class="h5 text-white mb-0 font-weight-bold"
+                                        >
+                                            <small class="mr-2">From</small
+                                            >£350.00
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body px-4 py-2">
+                                <a href="#" class="d-block">
+                                    <div
+                                        class="mb-1 d-flex align-items-center font-size-14 text-gray-1"
+                                    >
+                                        <i
+                                            class="fa fa-map-marker text-primary mr-2"
+                                        ></i>
+
+                                        Greater London, United Kingdom
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    class="card-title font-size-17 text-primary mb-0 font-weight-bold"
+                                    >Stonehenge, Windsor Castle,<br />and Bath
+                                    from London</a
+                                >
+
+                                <div class="my-2">
+                                    <div
+                                        class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary"
+                                    >
+                                        <div class="green-lighter mr-2">
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+                        <div
+                            class="card mb-1 transition-3d-hover shadow-hover-2 tab-card h-100"
+                        >
+                            <div class="position-relative mb-2">
+                                <a
+                                    href="#"
+                                    class="d-block gradient-overlay-half-bg-gradient-v5"
+                                >
+                                    <img
+                                        class="card-img-top"
+                                        src="img/hotels/img2.jpg"
+                                        alt="img"
+                                    />
+                                </a>
+
+                                <div
+                                    class="position-absolute top-0 left-0 pt-4 pl-3"
+                                >
+                                    <span
+                                        class="badge badge-pill bg-white text-primary px-4 py-2 font-size-14 font-weight-normal"
+                                        >Featured</span
+                                    >
+                                </div>
+
+                                <div
+                                    class="position-absolute top-0 right-0 pt-5 pr-3"
+                                >
+                                    <button
+                                        type="button"
+                                        class="btn btn-sm btn-icon text-white rounded-circle"
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title=""
+                                        data-original-title="Save for later"
+                                    >
+                                        <span
+                                            class="flaticon-valentine-heart"
+                                        ></span>
+                                    </button>
+                                </div>
+
+                                <div
+                                    class="position-absolute bottom-8 left-0 right-0"
+                                >
+                                    <div class="px-3 pb-2">
+                                        <h2
+                                            class="h5 text-white mb-0 font-weight-bold"
+                                        >
+                                            <small class="mr-2">From</small>
+                                            £350.00
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body px-4 py-2">
+                                <a href="#" class="d-block">
+                                    <div
+                                        class="mb-1 d-flex align-items-center font-size-14 text-gray-1"
+                                    >
+                                        <i
+                                            class="fa fa-map-marker text-primary mr-2"
+                                        ></i>
+
+                                        Greater London, United Kingdom
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    class="card-title font-size-17 text-primary mb-0 font-weight-bold"
+                                >
+                                    Stonehenge, Windsor Castle,<br />and Bath
+                                    from London
+                                </a>
+
+                                <div class="my-2">
+                                    <div
+                                        class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary"
+                                    >
+                                        <div class="green-lighter mr-2">
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+                        <div
+                            class="card mb-1 transition-3d-hover shadow-hover-2 tab-card h-100"
+                        >
+                            <div class="position-relative mb-2">
+                                <a
+                                    href="#"
+                                    class="d-block gradient-overlay-half-bg-gradient-v5"
+                                >
+                                    <img
+                                        class="card-img-top"
+                                        src="img/hotels/img3.jpg"
+                                    />
+                                </a>
+
+                                <div
+                                    class="position-absolute top-0 left-0 pt-4 pl-3"
+                                >
+                                    <span
+                                        class="badge badge-pill bg-white text-primary px-4 py-2 font-size-14 font-weight-normal"
+                                        >Featured</span
+                                    >
+                                </div>
+
+                                <div
+                                    class="position-absolute top-0 right-0 pt-5 pr-3"
+                                >
+                                    <button
+                                        type="button"
+                                        class="btn btn-sm btn-icon text-white rounded-circle"
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title=""
+                                        data-original-title="Save for later"
+                                    >
+                                        <span
+                                            class="flaticon-valentine-heart"
+                                        ></span>
+                                    </button>
+                                </div>
+
+                                <div
+                                    class="position-absolute bottom-8 left-0 right-0"
+                                >
+                                    <div class="px-3 pb-2">
+                                        <h2
+                                            class="h5 text-white mb-0 font-weight-bold"
+                                        >
+                                            <small class="mr-2">From</small
+                                            >£350.00
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body px-4 py-2">
+                                <a href="#" class="d-block">
+                                    <div
+                                        class="mb-1 d-flex align-items-center font-size-14 text-gray-1"
+                                    >
+                                        <i
+                                            class="fa fa-map-marker text-primary mr-2"
+                                        ></i>
+
+                                        Greater London, United Kingdom
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    class="card-title font-size-17 text-primary mb-0 font-weight-bold"
+                                    >Stonehenge, Windsor Castle,<br />and Bath
+                                    from London</a
+                                >
+
+                                <div class="my-2">
+                                    <div
+                                        class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary"
+                                    >
+                                        <div class="green-lighter mr-2">
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                            <small class="fa fa-star"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section style="margin: 100px 0"></section>
+
+        <button id="movetop" title="Go to top">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-about">
+                            <div class="fs-logo">
+                                <img
+                                    src="img/logo-white.png"
+                                    class="site-logo"
+                                    alt=""
+                                />
+                            </div>
+
+                            <p>
+                                HMG Homes is a Luxury Real Estate Company. At
+                                HMG Homes, we focus on bringing our esteemed
+                                customers a combination of style and comfort.
+                            </p>
+
+                            <div class="fs-social">
+                                <a href="#" class="footer-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Links</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Contact us</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Login</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Signup</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Help</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Contact Support</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-widget">
+                            <h5>Contact us</h5>
+
+                            <ul>
+                                <li class="footer-item">Lagos, Nigeria</li>
+
+                                <li class="footer-item">
+                                    Phone no: +2348170943585
+                                </li>
+
+                                <li class="footer-item">
+                                    Email: contact@hmghomes.com
+                                </li>
+                            </ul>
+
+                            <ul class="mt-4">
+                                <li class="footer-item">Oslo, Norway</li>
+
+                                <li class="footer-item">
+                                    Phone no: +47 973 25 588
+                                </li>
+
+                                <li class="footer-item">
+                                    Email: contact@hmghomes.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="copyright-text d-block"
+                    >HMG Homes, &copy; 2021 All rights reserved.</span
+                >
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/plugins.js"></script> -->
+        <script src="js/moment.min.js"></script>
+        <script src="js/daterangepicker.js"></script>
+        <script>
+            $(function () {
+                $(".bg").each(function () {
+                    var bg = $(this).data("bg");
+                    $(this).css("background-image", "url(" + bg + ")");
+                });
+
+                $(".qty-dropdown-header").click(function () {
+                    $(this)
+                        .parent(".qty-dropdown")
+                        .find(".qty-dropdown-content")
+                        .slideToggle(400);
+                });
+
+                $(".quantity").each(function () {
+                    var t = jQuery(this),
+                        i = t.find('input[type="number"]'),
+                        n = t.find(".quantity-up"),
+                        a = t.find(".quantity-down"),
+                        u = i.attr("min"),
+                        r = i.attr("max");
+                    n.click(function () {
+                        var n = parseFloat(i.val());
+                        if (n >= r) var a = n;
+                        else a = n + 1;
+                        t.find("input").val(a),
+                            t.find("input").trigger("change");
+                    }),
+                        a.click(function () {
+                            var n = parseFloat(i.val());
+                            if (n <= u) var a = n;
+                            else a = n - 1;
+                            t.find("input").val(a),
+                                t.find("input").trigger("change");
+                        });
+                });
+
+                $('input[name="main-input-search"]').daterangepicker({
+                    opens: "right",
+                    autoUpdateInput: false,
+                    parentEl: $(".main-date-parent"),
+                    locale: {
+                        cancelLabel: "Clear",
+                    },
+                });
+
+                $('input[name="main-input-search"]').on(
+                    "apply.daterangepicker",
+                    function (ev, picker) {
+                        $(this).val(
+                            picker.startDate.format("MM/DD/YYYY") +
+                                " - " +
+                                picker.endDate.format("MM/DD/YYYY")
+                        );
+                    }
+                );
+
+                $('input[name="main-input-search"]').on(
+                    "cancel.daterangepicker",
+                    function (ev, picker) {
+                        $(this).val("");
+                    }
+                );
+
+                // $('input[name="main-input-search_slider"]').daterangepicker({
+                //     autoUpdateInput: false,
+                //     drops: "up",
+                //     parentEl: $(".main-date-parent3"),
+                //     locale: {
+                //         cancelLabel: "Clear",
+                //     },
+                // });
+
+                // $('input[name="main-input-search_slider"]').on(
+                //     "apply.daterangepicker",
+                //     function (ev, picker) {
+                //         $(this).val(
+                //             picker.startDate.format("MM/DD/YYYY") +
+                //                 " - " +
+                //                 picker.endDate.format("MM/DD/YYYY")
+                //         );
+                //     }
+                // );
+
+                // $('input[name="main-input-search_slider"]').on(
+                //     "cancel.daterangepicker",
+                //     function (ev, picker) {
+                //         $(this).val("");
+                //     }
+                // );
+            });
+        </script>
+    </body>
+</html>

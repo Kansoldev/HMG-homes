@@ -13,22 +13,9 @@
         <link href="assets/css/themify-icons.css" rel="stylesheet" />
         <!-- Bootstrap CSS -->
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
-        <!-- Dropzone CSS -->
-        <link href="assets/css/dropzone.css" rel="stylesheet" />
         <!-- Custom CSS -->
         <link href="assets/css/main.css" rel="stylesheet" />
         <link href="assets/css/utilities.css" rel="stylesheet" />
-
-        <style>
-            .parsley-required,
-            .parsley-pattern,
-            .parsley-type,
-            .parsley-length {
-                color: #ff0000;
-                font-weight: 500;
-                margin-top: 10px;
-            }
-        </style>
     </head>
 
     <body class="skin-blue fixed-layout">
@@ -385,27 +372,27 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <form class="pro-add-form" id="uploadForm">
+                                    <form class="pro-add-form">
                                         <div class="form-group">
-                                            <div
-                                                class="dropzone"
-                                                id="property-upload"
-                                            ></div>
+                                            <label for="input-file-now"
+                                                >Property Image</label
+                                            ><br />
+
+                                            <input
+                                                type="file"
+                                                id="input-file-now"
+                                            />
                                         </div>
 
                                         <div class="form-group">
                                             <label for="pname"
                                                 >Property Name</label
                                             >
-
                                             <input
                                                 type="text"
                                                 class="form-control"
                                                 id="pname"
-                                                name="title"
-                                                placeholder="Enter property name"
-                                                data-parsley-required-message="You left the property name blank"
-                                                required
+                                                placeholder="Enter Name"
                                             />
                                         </div>
 
@@ -418,10 +405,7 @@
                                                 class="form-control"
                                                 rows="5"
                                                 id="pdesc"
-                                                name="description"
                                                 placeholder="Enter Description"
-                                                data-parsley-required-message="You left the property description blank"
-                                                required
                                             ></textarea>
                                         </div>
 
@@ -437,15 +421,14 @@
                                                     >
                                                         <input
                                                             type="radio"
-                                                            id="rent"
-                                                            name="status"
-                                                            value="for rent"
+                                                            id="customRadio3"
+                                                            name="member"
                                                             class="custom-control-input"
                                                         />
 
                                                         <label
                                                             class="custom-control-label"
-                                                            for="rent"
+                                                            for="customRadio3"
                                                             >For Rent</label
                                                         >
                                                     </div>
@@ -455,15 +438,14 @@
                                                     >
                                                         <input
                                                             type="radio"
-                                                            id="sale"
-                                                            name="status"
-                                                            value="for sale"
+                                                            id="customRadio4"
+                                                            name="member"
                                                             class="custom-control-input"
                                                         />
 
                                                         <label
                                                             class="custom-control-label"
-                                                            for="sale"
+                                                            for="customRadio4"
                                                             >For Sale</label
                                                         >
                                                     </div>
@@ -472,16 +454,13 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="price">Price</label>
+                                            <label for="plocation">Price</label>
 
                                             <input
                                                 type="text"
                                                 class="form-control"
-                                                id="price"
-                                                name="price"
+                                                id="plocation"
                                                 placeholder="Enter Price"
-                                                data-parsley-required-message="Enter price for property"
-                                                required
                                             />
                                         </div>
 
@@ -494,9 +473,6 @@
                                                 class="form-control"
                                                 rows="3"
                                                 id="paddress"
-                                                name="address"
-                                                data-parsley-required-message="Property doesn't have an address"
-                                                required
                                             ></textarea>
                                         </div>
 
@@ -504,53 +480,71 @@
                                             <label for="plocation"
                                                 >Property Location</label
                                             >
-
                                             <input
-                                                type="text"
+                                                type="email"
                                                 class="form-control"
                                                 id="plocation"
-                                                name="location"
                                                 placeholder="Enter Location"
-                                                data-parsley-required-message="Property location is blank"
-                                                required
                                             />
                                         </div>
 
                                         <div class="form-group">
                                             <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label
-                                                            >Square
-                                                            meters</label
-                                                        >
+                                                <div
+                                                    class="col-sm-4 form-group"
+                                                >
+                                                    <label for="psqft"
+                                                        >Square Feet</label
+                                                    >
 
-                                                        <input
-                                                            type="number"
-                                                            class="form-control"
-                                                            name="square_meters"
-                                                            placeholder="Square meters"
-                                                            data-parsley-required-message="Enter property square meters"
-                                                            required
-                                                        />
-                                                    </div>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="psqft"
+                                                    />
                                                 </div>
 
                                                 <div
                                                     class="col-sm-4 form-group"
                                                 >
-                                                    <label for="pyear"
+                                                    <label for="year"
                                                         >Year Built</label
                                                     >
 
                                                     <input
                                                         type="number"
                                                         class="form-control"
-                                                        id="pyear"
-                                                        name="year"
-                                                        data-parsley-required-message="Year built is blank"
-                                                        required
+                                                        id="year"
                                                     />
+                                                </div>
+
+                                                <div
+                                                    class="col-sm-4 form-group"
+                                                >
+                                                    <label for="status"
+                                                        >Status</label
+                                                    >
+
+                                                    <select
+                                                        class="form-control custom-select"
+                                                        id="status"
+                                                    >
+                                                        <option
+                                                            value="0"
+                                                            disabled
+                                                            selected
+                                                        >
+                                                            Status
+                                                        </option>
+
+                                                        <option value="1">
+                                                            Active
+                                                        </option>
+
+                                                        <option value="2">
+                                                            Inactive
+                                                        </option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -567,9 +561,6 @@
                                                     <select
                                                         class="form-control custom-select"
                                                         id="type"
-                                                        name="type"
-                                                        data-parsley-required-message="Select property type"
-                                                        required
                                                     >
                                                         <option
                                                             value="0"
@@ -598,16 +589,13 @@
                                                 <div
                                                     class="col-sm-4 form-group"
                                                 >
-                                                    <label for="country"
+                                                    <label for="subdiv"
                                                         >Country</label
                                                     >
 
                                                     <select
                                                         class="form-control custom-select"
-                                                        id="country"
-                                                        name="country"
-                                                        data-parsley-required-message="Select country"
-                                                        required
+                                                        id="subdiv"
                                                     >
                                                         <option
                                                             value="0"
@@ -617,8 +605,12 @@
                                                             Select Country
                                                         </option>
 
-                                                        <option value="country">
-                                                            Country
+                                                        <option value="1">
+                                                            Matindale
+                                                        </option>
+
+                                                        <option value="2">
+                                                            citadel
                                                         </option>
                                                     </select>
                                                 </div>
@@ -626,16 +618,13 @@
                                                 <div
                                                     class="col-sm-4 form-group"
                                                 >
-                                                    <label for="state"
+                                                    <label for="city"
                                                         >State</label
                                                     >
 
                                                     <select
                                                         class="form-control custom-select"
-                                                        id="state"
-                                                        name="state"
-                                                        data-parsley-required-message="Select state"
-                                                        required
+                                                        id="city"
                                                     >
                                                         <option
                                                             value="0"
@@ -657,63 +646,23 @@
                                             </div>
                                         </div>
 
+                                        <!-- Apartments -->
                                         <div
-                                            class="form-group prop"
+                                            class="form-group prop d-none"
                                             id="apartment"
                                         >
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="room"
+                                                        <label
                                                             >No of Rooms</label
                                                         >
 
                                                         <input
                                                             type="number"
                                                             class="form-control"
-                                                            id="room"
+                                                            id="plocation"
                                                             placeholder="No of rooms"
-                                                            name="room"
-                                                            data-parsley-required-message="Specify number of Rooms"
-                                                            required
-                                                        />
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label for="bedroom"
-                                                            >No of
-                                                            Bedrooms</label
-                                                        >
-
-                                                        <input
-                                                            type="number"
-                                                            class="form-control"
-                                                            id="bedroom"
-                                                            name="bedroom"
-                                                            placeholder="No of bedrooms"
-                                                            data-parsley-required-message="Specify number of bedrooms"
-                                                            required
-                                                        />
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label for="bathroom"
-                                                            >No of
-                                                            Bathrooms</label
-                                                        >
-
-                                                        <input
-                                                            type="number"
-                                                            class="form-control"
-                                                            id="bathroom"
-                                                            name="bathroom"
-                                                            placeholder="No of bathrooms"
-                                                            data-parsley-required-message="Specify number of bathrooms"
-                                                            required
                                                         />
                                                     </div>
                                                 </div>
@@ -721,23 +670,109 @@
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label
-                                                            >No of Parking
-                                                            Spaces</label
+                                                            >No of
+                                                            Bedrooms</label
                                                         >
 
                                                         <input
                                                             type="number"
                                                             class="form-control"
-                                                            placeholder="No of parking spaces"
-                                                            name="parking_spaces"
-                                                            data-parsley-required-message="Specify amount of parking spaces"
-                                                            required
+                                                            id="bedrooms"
+                                                            placeholder="No of bedrooms"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label
+                                                            >No of
+                                                            Bathrooms</label
+                                                        >
+
+                                                        <input
+                                                            type="number"
+                                                            class="form-control"
+                                                            id="plocation"
+                                                            placeholder="No of bathrooms"
                                                         />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- End Apartments -->
+
+                                        <!-- House -->
+                                        <div
+                                            class="form-group prop d-none"
+                                            id="house"
+                                        >
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label
+                                                            >No of Rooms</label
+                                                        >
+
+                                                        <input
+                                                            type="number"
+                                                            class="form-control"
+                                                            id="plocation"
+                                                            placeholder="No of rooms"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label
+                                                            >No of
+                                                            Bedrooms</label
+                                                        >
+
+                                                        <input
+                                                            type="number"
+                                                            class="form-control"
+                                                            id="bedrooms"
+                                                            placeholder="No of bedrooms"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label
+                                                            >No of
+                                                            Bathrooms</label
+                                                        >
+
+                                                        <input
+                                                            type="number"
+                                                            class="form-control"
+                                                            id="plocation"
+                                                            placeholder="No of bathrooms"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label
+                                                            >No of parking
+                                                            spaces</label
+                                                        >
+
+                                                        <input
+                                                            type="number"
+                                                            class="form-control"
+                                                            id="plocation"
+                                                            placeholder="No of parking spaces"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End House -->
 
                                         <!-- Land -->
                                         <div
@@ -747,15 +782,12 @@
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="acres"
-                                                            >Acres</label
-                                                        >
+                                                        <label>Acres</label>
 
                                                         <input
                                                             type="number"
                                                             class="form-control"
-                                                            id="acres"
-                                                            name="acres"
+                                                            id="plocation"
                                                             placeholder="Number of acres"
                                                         />
                                                     </div>
@@ -763,15 +795,12 @@
 
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="lot"
-                                                            >Lot size</label
-                                                        >
+                                                        <label>Lot size</label>
 
                                                         <input
                                                             type="number"
                                                             class="form-control"
-                                                            id="lot"
-                                                            name="lot_size"
+                                                            id="bedrooms"
                                                             placeholder="Lot size"
                                                         />
                                                     </div>
@@ -779,15 +808,14 @@
 
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="area"
+                                                        <label
                                                             >Total area</label
                                                         >
 
                                                         <input
                                                             type="number"
                                                             class="form-control"
-                                                            id="area"
-                                                            name="area"
+                                                            id="plocation"
                                                             placeholder="Total area"
                                                         />
                                                     </div>
@@ -795,7 +823,7 @@
 
                                                 <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label for="meters"
+                                                        <label
                                                             >Square
                                                             meters</label
                                                         >
@@ -803,8 +831,7 @@
                                                         <input
                                                             type="number"
                                                             class="form-control"
-                                                            id="meters"
-                                                            name="square_meters"
+                                                            id="plocation"
                                                             placeholder="Square meters"
                                                         />
                                                     </div>
@@ -839,9 +866,8 @@
                                         <!-- AMENITIES -->
                                         <div class="features-list">
                                             <div class="feature-item">
-                                                <label for="air">
-                                                    Air conditioning
-
+                                                <label for="air"
+                                                    >Air conditioning
                                                     <input
                                                         type="checkbox"
                                                         id="air"
@@ -852,12 +878,11 @@
                                                     ></span>
                                                 </label>
 
-                                                <label for="laundry">
-                                                    Laundry
-
+                                                <label for="lundry"
+                                                    >Laundry
                                                     <input
                                                         type="checkbox"
-                                                        id="laundry"
+                                                        id="lundry"
                                                     />
 
                                                     <span
@@ -865,9 +890,8 @@
                                                     ></span>
                                                 </label>
 
-                                                <label for="refrigerator">
-                                                    Refrigerator
-
+                                                <label for="refrigerator"
+                                                    >Refrigerator
                                                     <input
                                                         type="checkbox"
                                                         id="refrigerator"
@@ -1078,51 +1102,47 @@
         </div>
         <!-- End Wrapper -->
 
-        <!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
-        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
         <script src="assets/js/bootstrap.bundle.js"></script>
-        <script src="assets/js/parsley.min.js"></script>
         <script src="assets/js/perfect-scrollbar.jquery.min.js"></script>
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/custom.min.js"></script>
-        <script src="assets/js/dropzone.js"></script>
         <script>
-            $(function () {
-                Dropzone.options.propertyUpload = {
-                    // The url can also be used on the options object of the ID to create dropzones
-                    url: "/file.php",
-                    autoProcessQueue: false,
-                    parallelUploads: 10,
-                    acceptedFiles: ".png, .jpg, .gif, .bmp, .jpeg",
-                    dictDefaultMessage: "Click to add property images",
-                    init: function () {
-                        var submitButton = document.querySelector(
-                            "#submit-all"
-                        );
-                        myDropzone = this;
+            const removeClass = (id) =>
+                document.querySelector(id).classList.remove("d-none");
 
-                        submitButton.addEventListener("click", function () {
-                            /* This will change the state of the autoProcess queue
-                                back to true so that the images can be uploaded,
-                                and this is after this button has been clicked
-                            */
-                            myDropzone.processQueue();
-                        });
+            const addClass = (id) =>
+                document.querySelector(id).classList.add("d-block");
 
-                        this.on("complete", function () {
-                            if (
-                                this.getQueuedFiles().length == 0 &&
-                                this.getUploadingFiles().length == 0
-                            ) {
-                                myDropzone.removeAllFiles(); // Remove all files from dropzone queue that have been uploaded
-                            }
+            document.querySelector("#type").addEventListener("change", (e) => {
+                Array.from(document.querySelectorAll(".prop")).forEach(
+                    (prop) => {
+                        if (prop.classList.contains("d-block")) {
+                            prop.classList.remove("d-block");
+                            prop.classList.add("d-none");
+                        }
+                    }
+                );
 
-                            list_image(); // cCall this function whenever we have upload a new image
-                        });
-                    },
-                };
+                switch (e.target.value) {
+                    case "apartment":
+                        removeClass("#apartment");
+                        addClass("#apartment");
+                        break;
 
-                $("#uploadForm").parsley();
+                    case "land":
+                        removeClass("#land");
+                        addClass("#land");
+                        break;
+
+                    case "house":
+                        removeClass("#house");
+                        addClass("#house");
+                        break;
+
+                    default:
+                        return;
+                }
             });
         </script>
     </body>

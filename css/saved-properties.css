@@ -1,0 +1,90 @@
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #13506f;
+}
+
+.dashboard-wraper {
+    position: relative;
+    width: 100%;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
+    border-radius: 10px;
+}
+
+.singles-dashboard-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeef3;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.singles-dashboard-list:not(:last-child) {
+    border-bottom: 1px solid #eaeef3;
+}
+
+.sd-list-left {
+    flex: 1;
+    max-width: 240px;
+    height: 180px;
+    max-height: 180px;
+}
+
+@media only screen and (max-width: 767px) {
+    .sd-list-left {
+        max-width: 100%;
+    }
+}
+
+.sd-list-left img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.sd-list-right {
+    padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .sd-list-right {
+        padding: 1rem 1rem;
+    }
+}
+
+.sd-list-right .listing_dashboard_title {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.sd-list-right .action {
+    margin-top: 1rem;
+}
+
+.sd-list-right .action a {
+    margin-right: 9px;
+    display: inline-block;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    background-color: #13506f;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+    color: #fff !important;
+}
+
+.theme-cl {
+    color: #13506f;
+}
+
+.user_dashboard_listed {
+    display: block;
+    margin-bottom: 2px;
+}

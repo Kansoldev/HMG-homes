@@ -33,10 +33,6 @@ $(function () {
     });
 });
 
-document.querySelector(".user-menu").addEventListener("click", function () {
-    this.classList.toggle("active");
-});
-
 document.querySelector("#movetop").addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

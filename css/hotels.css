@@ -1,0 +1,364 @@
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: #13506f;
+}
+
+.daterangepicker .drp-buttons .btn.btn-primary {
+    background: #13506f;
+}
+
+.daterangepicker {
+    width: 506px;
+}
+
+input::placeholder {
+    color: #13506f;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.fs-13 {
+    font-size: 13px !important;
+}
+
+.hero-section {
+    height: 600px;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .hero-section {
+        padding: 50px 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1064px) {
+    .hero-section {
+        padding: 100px 0;
+    }
+}
+
+.hero-parallax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+section.parallax-section .bg,
+.list-single-hero .bg,
+.hero-parallax .bg {
+    height: 120%;
+    top: 0;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-origin: content-box;
+}
+
+.op7 {
+    opacity: 0.5 !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.hero-section-wrap {
+    z-index: 30;
+}
+
+.fl-wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.home-intro h2 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+    .home-intro h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-intro h2 {
+        font-size: 34px;
+        margin-top: 50px;
+    }
+}
+
+.home-intro h3 {
+    color: #fff;
+    padding-top: 12px;
+}
+
+.main-search-input-wrap {
+    max-width: 1100px;
+    /* max-width: 900px; */
+    margin: auto;
+    position: relative;
+}
+
+.main-search-input {
+    padding: 0 150px 0 0;
+    border-radius: 4px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 0px 9px rgb(255 255 255 / 30%);
+}
+
+@media only screen and (max-width: 768px) {
+    .main-search-input {
+        padding: 0;
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.main-search-input-item,
+.main-search-input-item input {
+    height: 50px;
+    float: left;
+}
+
+.main-search-input-item {
+    /* width: 25%; */
+    width: 33.3%;
+    border-left: 1px solid #eee;
+    position: relative;
+    background: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-search-input-item {
+        border-radius: 6px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+.main-search-input-item input {
+    border: none;
+    width: 100%;
+    padding: 0 10px 0 40px;
+}
+
+.main-search-input-item.location input,
+.main-search-input-item.location {
+    border-radius: 6px 0 0 6px;
+}
+
+.main-search-input-item.location {
+    border: none;
+}
+
+.main-search-input-item.location a {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    z-index: 312;
+    color: #13506f;
+}
+
+.inpt_dec {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    z-index: 20;
+    color: #13506f;
+}
+
+.quantity {
+    float: left;
+    width: 65px;
+    height: 42px;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .qty-dropdown {
+        z-index: 100;
+    }
+}
+
+.qty-dropdown-header {
+    font-size: 13px;
+    color: #13506f;
+    font-weight: 300;
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.qty-dropdown-content {
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 15px;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+    display: none;
+}
+
+.qty-dropdown-content .quantity-item {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.qty-dropdown-content .quantity-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.qty-dropdown-content .quantity-item .quantity {
+    float: right;
+}
+
+.qty-dropdown-content .quantity-item label {
+    float: left;
+    color: #666;
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    top: 12px;
+}
+
+.qty-dropdown-content .quantity-item label i {
+    padding-right: 10px;
+    font-size: 16px;
+    width: 20px;
+}
+
+.quantity input {
+    width: 100%;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px 0 0 4px;
+    margin-bottom: 0;
+}
+
+.quantity-nav {
+    position: absolute;
+    height: 42px;
+    right: 0;
+    width: 20px;
+    border-right: 1px solid #eee;
+}
+
+.quantity-button {
+    background: #f7f9fb;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    line-height: 1.7;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    bottom: -1px;
+    height: 50%;
+    border-bottom: 1px solid #eee;
+}
+
+.main-search-button {
+    position: absolute;
+    right: 0px;
+    height: 50px;
+    width: 151px;
+    color: #fff;
+    top: 0;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-search-button {
+        position: relative;
+        float: left;
+        border-radius: 6px;
+        width: 100%;
+    }
+}
+
+.header-user-name:before,
+.qty-dropdown-header:before,
+.main-search-input-item_small:before {
+    font-family: Font awesome\5 Free;
+    content: "\f0d7";
+    position: absolute;
+    font-size: 13px;
+    right: -26px;
+    color: #13506f;
+    font-weight: 800;
+    transition: all 0.2s ease-in-out;
+    z-index: 20;
+}
+
+.main-search-input-item_small:before,
+.qty-dropdown-header:before {
+    bottom: 16px;
+    right: 20px;
+}
+
+.qty-dropdown-header:before {
+    bottom: 1px;
+}
