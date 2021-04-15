@@ -1,13 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HMG Homes - Account</title>
         <link rel="icon" href="img/logo.png" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/fontawesome.css" />
         <link rel="stylesheet" href="css/main.css" />
+
+        <style>
+            .inputLabel {
+                color: #176389;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+
+            .symbol-input100 {
+                top: 47px;
+            }
+
+            .input-wrapper {
+                margin-bottom: 20px;
+            }
+
+            .jdHFhS {
+                border-top: 1px solid rgba(51, 51, 51, 0.2);
+                text-align: center;
+                padding: 16px 16px 0px;
+                margin-top: 20px;
+            }
+
+            .iWGcMh {
+                color: rgb(42, 42, 51);
+                text-transform: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0px;
+            }
+
+            .edCEyS {
+                margin: 16px 0px 0px;
+            }
+
+            .social-logins-container .btn-social-connect {
+                display: block;
+                margin: 0 auto 1rem;
+                border: 1px solid #ccc;
+                height: 38px;
+                border-radius: 3px;
+                max-width: 408px;
+                overflow: hidden;
+                padding: 0 40px;
+                position: relative;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%;
+                font-size: 15px;
+                cursor: pointer;
+                font-family: inherit;
+            }
+
+            .social-logins-container .btn-social-connect svg {
+                position: absolute;
+                left: 10%;
+                height: 18px;
+            }
+
+            .social-logins-container .btn-apple {
+                background-color: #000;
+                border-color: #000;
+                color: #fff;
+            }
+
+            .social-logins-container .btn-facebook {
+                background: #006aff;
+                border-color: #1877f2;
+                color: #fff;
+            }
+
+            .social-logins-container .btn-social-connect:last-child {
+                margin-bottom: 0;
+            }
+
+            .social-logins-container .btn-google-plus {
+                background: #fff;
+                color: #000;
+            }
+        </style>
     </head>
 
     <body>
@@ -15,28 +96,24 @@
             <div class="form-container bg-white px">
                 <form
                     id="signupForm"
-                    class="d-flex justify-content-between flex-wrap"
+                    class="d-flex align-items-center flex-wrap"
                     autocomplete="off"
                 >
-                    <span class="form-title text-center w-100">
-                        <h1 class="mb-4 logo">
-                            <a class="navbar-brand" href="index.html">
-                                <img
-                                    src="img/logo.png"
-                                    class="site-logo"
-                                    alt=""
-                                />
-                            </a>
-                        </h1>
-
-                        Sign up and get Started!
-                    </span>
+                    <a
+                        class="navbar-brand d-block mx-auto mb-4"
+                        href="index.html"
+                    >
+                        <img src="img/logo.png" class="site-logo" alt="" />
+                    </a>
 
                     <div class="input-wrapper">
+                        <label for="name" class="inputLabel">Name</label>
+
                         <input
                             class="input100"
                             type="text"
-                            placeholder="Name"
+                            id="name"
+                            placeholder="Enter name"
                             name="name"
                             data-parsley-required-message="Please enter your name"
                             required
@@ -50,10 +127,13 @@
                     </div>
 
                     <div class="input-wrapper">
+                        <label for="email" class="inputLabel">Email</label>
+
                         <input
                             class="input100"
                             type="text"
-                            placeholder="Email address"
+                            id="email"
+                            placeholder="Enter email"
                             name="email"
                             data-parsley-required-message="Please enter your email address"
                             data-parsley-pattern="/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/"
@@ -69,10 +149,13 @@
                     </div>
 
                     <div class="input-wrapper">
+                        <label for="phone" class="inputLabel">Phone</label>
+
                         <input
                             class="input100"
                             type="text"
-                            placeholder="Phone number"
+                            id="phone"
+                            placeholder="Enter phone number"
                             name="phone"
                             data-parsley-required-message="Please enter your phone number"
                             data-parsley-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/"
@@ -87,12 +170,17 @@
                         </span>
                     </div>
 
-                    <div class="input-wrapper">
+                    <div class="input-wrapper mb-0">
+                        <label for="password" class="inputLabel"
+                            >Password</label
+                        >
+
                         <input
                             class="input100"
+                            id="password"
                             type="password"
                             name="password"
-                            placeholder="Password"
+                            placeholder="Create Password"
                             data-parsley-required-message="Please enter your password"
                             required
                         />
@@ -104,10 +192,100 @@
                         </span>
                     </div>
 
+                    <div class="pro">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="mt-3 mr-2"
+                        />
+                        I am a landlord or industry professional
+                    </div>
+
                     <div class="container-form-btn">
                         <button class="btn btn-primary w-100 py-3 font-20">
                             Sign up
                         </button>
+                    </div>
+
+                    <div class="sc-kgoBCf jdHFhS w-100">
+                        <span class="Text-c11n-8-30-2__aiai24-0 iWGcMh">
+                            Or connect with:
+                        </span>
+
+                        <div
+                            class="Text-c11n-8-30-2__aiai24-0 edCEyS social-logins-container"
+                        >
+                            <button
+                                type="submit"
+                                class="btn-social-connect btn-apple"
+                            >
+                                <svg
+                                    viewBox="0 0 170 170"
+                                    fill="currentColor"
+                                    preserveAspectRatio="xMinYMin meet"
+                                    focusable="false"
+                                    aria-hidden="true"
+                                >
+                                    <title>Apple Logo</title>
+                                    <path
+                                        d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.501 3.24-12.742 3.35-4.929.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.032-7.08-9.169-15.29-12.41-24.65-3.471-10.11-5.211-19.9-5.211-29.378 0-10.857 2.346-20.221 7.045-28.068 3.693-6.303 8.606-11.275 14.755-14.925s12.793-5.51 19.948-5.629c3.915 0 9.049 1.211 15.429 3.591 6.362 2.388 10.447 3.599 12.238 3.599 1.339 0 5.877-1.416 13.57-4.239 7.275-2.618 13.415-3.702 18.445-3.275 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.386-18.22 17.731-18.1 31.002.11 10.337 3.86 18.939 11.23 25.769 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.669-7.12 8.324-15.732 13.134-25.071 12.375a25.222 25.222 0 0 1-.188-3.07c0-7.778 3.386-16.102 9.399-22.908 3.002-3.446 6.82-6.311 11.45-8.597 4.62-2.252 8.99-3.497 13.1-3.71.12 1.083.17 2.166.17 3.24z"
+                                    ></path></svg
+                                >Continue with Apple</button
+                            ><button
+                                type="submit"
+                                class="btn-social-connect btn-facebook"
+                            >
+                                <svg
+                                    viewBox="0 0 200 200"
+                                    aria-hidden="true"
+                                    fill="currentColor"
+                                    preserveAspectRatio="xMinYMin meet"
+                                    focusable="false"
+                                >
+                                    <title>Facebook</title>
+                                    <path
+                                        d="M200 100a100 100 0 1 0-115.6 98.8v-69.9H59V100h25.4V78c0-25 14.9-39 37.7-39 11 0 22.4 2 22.4 2v24.6H132c-12.4 0-16.3 7.7-16.3 15.6V100h27.8l-4.5 29h-23.3v69.8A100 100 0 0 0 200 100"
+                                        stroke="none"
+                                    ></path></svg
+                                >Continue with Facebook</button
+                            ><button
+                                class="btn-social-connect btn-google-plus google-plus-logo"
+                                type="button"
+                            >
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    preserveAspectRatio="xMinYMin meet"
+                                    focusable="false"
+                                    aria-hidden="true"
+                                >
+                                    <title>Google Logo</title>
+                                    <clipPath id="g">
+                                        <path
+                                            d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"
+                                        ></path>
+                                    </clipPath>
+                                    <g class="colors" clip-path="url(#g)">
+                                        <path
+                                            fill="#FBBC05"
+                                            d="M0 37V11l17 13z"
+                                        ></path>
+                                        <path
+                                            fill="#EA4335"
+                                            d="M0 11l17 13 7-6.1L48 14V0H0z"
+                                        ></path>
+                                        <path
+                                            fill="#34A853"
+                                            d="M0 37l30-23 7.9 1L48 0v48H0z"
+                                        ></path>
+                                        <path
+                                            fill="#4285F4"
+                                            d="M48 48L17 24l-4-3 35-10z"
+                                        ></path>
+                                    </g></svg
+                                >Continue with Google
+                            </button>
+                        </div>
                     </div>
 
                     <div class="text-center w-100" style="padding-top: 30px">
