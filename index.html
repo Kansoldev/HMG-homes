@@ -18,8 +18,9 @@
         <link rel="canonical" href="index.html" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/bootstrap-select.min.css" />
-        <link rel="stylesheet" href="css/fontawesome.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/index-cards.css" />
     </head>
 
     <body>
@@ -94,6 +95,35 @@
                         id="navbarTogglerDemo02"
                     >
                         <ul class="navbar-nav mx-lg-auto">
+                            <div class="dropdown-container">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Buy</a>
+                                </li>
+
+                                <div class="dropdown-content w-25">
+                                    <div class="dropdown-content-item">
+                                        <h4>Homes for Sale</h4>
+
+                                        <div class="row">
+                                            <div class="col-md">
+                                                <a href="homesforsale.html"
+                                                    >Homes for Sale</a
+                                                >
+                                                <a href="#"
+                                                    >New Home Construction</a
+                                                >
+                                                <a href="#"
+                                                    >For sale by owners</a
+                                                >
+                                                <a href="#"
+                                                    >Recent home sales</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="properties.html"
                                     >Properties</a
@@ -102,29 +132,71 @@
 
                             <div class="dropdown-container">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Buy</a>
+                                    <a class="nav-link" href="sell.html"
+                                        >Sell</a
+                                    >
                                 </li>
 
                                 <div class="dropdown-content">
                                     <div class="dropdown-content-item">
-                                        <h4>Homes for Sale</h4>
+                                        <div class="row">
+                                            <div class="col-md">
+                                                <h4>Resources</h4>
 
-                                        <a href="homesforsale.html"
-                                            >Homes for Sale</a
-                                        >
-                                        <a href="#">New Home Construction</a>
-                                        <a href="#">Work with your budget</a>
+                                                <a href="#">
+                                                    See your homes estimate
+                                                </a>
+
+                                                <a href="#">Home values</a>
+                                            </div>
+
+                                            <div class="col-md">
+                                                <h4>Selling Options</h4>
+
+                                                <a href="#"> Sell with hmg </a>
+                                                <a href="#">
+                                                    Find a seller's agent
+                                                </a>
+                                                <a href="#"
+                                                    >Post for sale by owner</a
+                                                >
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sell</a>
-                            </li>
+                            <div class="dropdown-container">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rent/lease</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Rent/Lease</a>
-                            </li>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-content-item">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4>Search for rentals</h4>
+
+                                                <a href="#">Rental buildings</a>
+                                                <a href="#">Houses for rent</a>
+                                            </div>
+
+                                            <div class="col-md">
+                                                <h4>Renter tools</h4>
+
+                                                <a href="applications.html"
+                                                    >Applications</a
+                                                >
+                                                <a href="#">Payments</a>
+                                                <a href="#">Renters guide</a>
+                                                <a href="#"
+                                                    >Affordability calculator</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <li class="nav-item">
                                 <a
@@ -1121,6 +1193,24 @@
                     $("#preloader-active").delay(450).fadeOut();
                 });
             });
+
+            // fetch(
+            //     "https://realty-mole-property-api.p.rapidapi.com/properties?address=5500%20Grand%20Lake%20Dr%2C%20San%20Antonio%2C%20TX%2078244&propertyType=land",
+            //     {
+            //         method: "GET",
+            //         headers: {
+            //             "x-rapidapi-key":
+            //                 "c15c23b586msh5cddfaaa76098aap1273d6jsn58376803f268",
+            //             "x-rapidapi-host":
+            //                 "realty-mole-property-api.p.rapidapi.com",
+            //         },
+            //     }
+            // )
+            //     .then((response) => response.json())
+            //     .then((data) => console.log(data))
+            //     .catch((err) => {
+            //         console.error(err);
+            //     });
         </script>
     </body>
 </html>
