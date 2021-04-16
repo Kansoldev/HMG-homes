@@ -1,0 +1,523 @@
+.section-title {
+    margin-bottom: 40px;
+    color: $primary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-left: 20px;
+
+    &::after {
+        content: "";
+        background-color: $primary-color;
+        position: absolute;
+        left: 0;
+        top: -5px;
+        width: 4px;
+        height: 40px;
+    }
+}
+
+.set-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// TOP HERO SECTION
+.hero-area {
+    @include background-image("../img/pexels-david-mcbee-1546166.jpg");
+    width: 100vw;
+    max-width: 100%;
+    min-height: 750px;
+    position: relative;
+
+    &::before {
+        @include before;
+    }
+
+    .hero-content {
+        @include position($top: 35px);
+
+        .hero-title {
+            font-size: 1.875rem;
+
+            @media (min-width: 768px) {
+                font-size: 2.8125rem;
+            }
+
+            @media (min-width: 900px) {
+                font-size: 3.44rem;
+            }
+        }
+    }
+}
+
+.home-nav {
+    margin-bottom: 1.56rem;
+
+    &-item {
+        display: inline-block;
+        font-size: 1rem;
+        height: 1.875rem;
+
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+    }
+
+    &-link {
+        border-color: $primary-color;
+        border-bottom: 3px solid transparent;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        padding: 0.45rem;
+
+        &.active,
+        &:hover {
+            border-color: $primary-color;
+        }
+    }
+}
+
+.property-form {
+    @include flex;
+    width: auto;
+    margin: 15px 25px 45px;
+
+    @media (min-width: 900px) {
+        width: 1000px;
+        margin: 0 0 45px;
+    }
+
+    .search {
+        font-size: 1.1875rem;
+        font-weight: 600;
+        height: 60px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            width: 25%;
+        }
+    }
+}
+
+span.input-group-btn {
+    background-color: #fff;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 33%;
+    }
+}
+// END TOP HERO SECTION
+
+// LATEST PROPERTIES DISPLAY
+.property-section {
+    padding-bottom: 60px;
+
+    .property-item {
+        margin-bottom: 40px;
+
+        .pi-pic {
+            height: 240px;
+            position: relative;
+
+            .label {
+                display: inline-block;
+                @include position($pos: absolute, $top: 20px, $left: 20px);
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding: 3px 10px 2px;
+                background-color: #0166d0;
+                color: #fff;
+            }
+        }
+    }
+
+    .pi-text {
+        background-color: #fff;
+        position: relative;
+        padding: 16px;
+        min-height: 200px;
+
+        .pt-price {
+            display: inline-block;
+            color: $primary-color;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+
+            span {
+                color: $secondary-color;
+                font-size: 0.875rem;
+            }
+        }
+
+        h5 {
+            margin-bottom: 6px;
+
+            a {
+                color: $secondary-color;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            margin-top: 10px;
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        ul {
+            position: absolute;
+            bottom: 15px;
+        }
+
+        ul li {
+            font-size: 15px;
+            color: #111;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 30px;
+
+            i {
+                font-size: 14px;
+                color: #777;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.heart-icon {
+    @include position(absolute, 1rem, 1rem);
+    color: $primary-color;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.44rem;
+    padding: 5px;
+
+    .tip-content {
+        @include position($pos: absolute, $top: -20px, $left: -9px) {
+            z-index: 99;
+            background-color: $primary-color;
+            color: #fff;
+            padding: 5px 12px;
+            font-size: 13px;
+            border-radius: 3px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s ease-in-out 0.05s;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: $primary-color;
+
+        .tip-content {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+// END LATEST PROPERTIES DISPLAY
+
+// WHO WE ARE
+.who-section {
+    @include background-image("../img/bg.jpg");
+    background-color: $primary-color;
+    background-blend-mode: darken;
+    padding: 60px 0;
+}
+
+.who-text {
+    margin-bottom: 40px;
+
+    p {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+        opacity: 0.7;
+    }
+}
+
+.who-features {
+    .who-item {
+        float: left;
+        width: calc(50% - 40px);
+        margin-right: 40px;
+        overflow: hidden;
+
+        @media (max-width: 767px) {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 100%;
+        }
+
+        &:nth-child(3) {
+            clear: left;
+        }
+
+        .who-pic {
+            background-color: #fff;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            line-height: 80px;
+            text-align: center;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .who-text {
+            overflow: hidden;
+
+            h5 {
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #fff;
+                opacity: 0.7;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.who-icon {
+    fill: $primary-color;
+    width: 45px;
+}
+// END WHO WE ARE
+
+// PROPERTY LOCATIONS
+.locations {
+    padding-top: 10px;
+    margin: 50px 30px;
+}
+
+.cs-item {
+    @include flex;
+    position: relative;
+    z-index: 2;
+    height: 200px;
+
+    @media (min-width: 768px) {
+        height: 300px;
+    }
+
+    .cs-text {
+        width: 170px;
+        background-color: #fff;
+        text-align: center;
+        padding: 18px 0;
+
+        h5 {
+            color: $secondary-color;
+            font-weight: 700;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        span {
+            color: #333;
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}
+// END PROPERTY LOCATIONS
+
+// OUR STATS
+.stats {
+    position: relative;
+    background-image: url("../img/stats.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 90px;
+    padding: 80px 0;
+
+    &::after {
+        @include before();
+    }
+
+    .row {
+        position: relative;
+        z-index: 99;
+    }
+
+    &-num {
+        display: block;
+        font-size: 3.125rem;
+        font-weight: 700;
+    }
+
+    &-text {
+        font-size: 1.1875rem;
+        opacity: 0.8;
+    }
+}
+// END OUR STATS
+
+// CURRENCY CONVERTER
+.currency-converter {
+    margin: 80px auto;
+
+    .card .card-header h1 {
+        font-size: 1.75rem;
+
+        @media (min-width: 768px) {
+            font-size: 42px;
+        }
+    }
+
+    #result {
+        color: $primary-color;
+        font-size: 2.625rem;
+        font-weight: 700;
+    }
+
+    .form-control:focus {
+        box-shadow: 0;
+    }
+
+    .error-message {
+        color: #ff0000;
+        padding: 6px;
+    }
+
+    .error-border {
+        border: 1px solid red !important;
+    }
+}
+
+.fa-exchange {
+    transform: rotate(90deg);
+
+    @media (min-width: 900px) {
+        transform: rotate(0deg);
+    }
+}
+
+.currency-wrapper {
+    @media (min-width: 900px) {
+        width: 65%;
+    }
+}
+
+.curr-input {
+    padding: 10px;
+    height: auto;
+
+    @media (min-width: 900px) {
+        width: 300px;
+    }
+}
+// END CURRENCY CONVERTER
+
+// ADVERT CARDS
+.hero-card {
+    position: relative;
+    font-size: 16px;
+    height: 500px;
+    margin-top: 60px;
+
+    @media (max-width: 767px) {
+        margin: 20px;
+    }
+
+    .card-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 767px) {
+            @include flex;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            text-align: center;
+            padding: 7px;
+            transform: translate(0, 0);
+
+            h2 {
+                color: #fff;
+            }
+
+            &::before {
+                @include before {
+                    z-index: -1;
+                }
+            }
+        }
+
+        p {
+            color: $secondary-color;
+            font-size: 1.1875rem;
+            margin: 24px 0;
+
+            @media (max-width: 767px) {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.hero-img {
+    @include position(absolute) {
+        overflow: hidden;
+        background-color: #bbb;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-card.img-left .card-content {
+        left: 75%;
+    }
+
+    .hero-card.img-right .card-content {
+        left: 25%;
+    }
+
+    .hero-card.img-left .card-content,
+    .hero-card.img-right .card-content {
+        padding: 0 50px;
+        width: 50%;
+    }
+
+    .hero-card.img-left .hero-img {
+        right: 50%;
+    }
+
+    .hero-card.img-right .hero-img {
+        left: 50%;
+    }
+}
+// END ADVERT CARDS

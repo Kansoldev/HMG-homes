@@ -1,0 +1,89 @@
+.preloader {
+    @include position(fixed) {
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+        margin: 0 auto;
+    }
+
+    .preloader-circle {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        z-index: 10;
+        border-style: solid;
+        border-width: 4px;
+        border-top-color: $primary-color;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+        box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+        background-color: #ffffff;
+        -webkit-animation: zoom 2000ms infinite ease;
+        animation: zoom 2000ms infinite ease;
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+
+    .preloader-img {
+        @include position(absolute, 50%, 0, 0, 0) {
+            z-index: 200;
+            display: inline-block;
+            text-align: center;
+            padding-top: 6px;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: 0.6s;
+            -o-transition: 0.6s;
+            transition: 0.6s;
+        }
+
+        img {
+            max-width: 55px;
+        }
+    }
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+    }
+}

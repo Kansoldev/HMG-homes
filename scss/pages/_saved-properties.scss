@@ -1,0 +1,140 @@
+.breadcrumb_title {
+    color: $primary-color;
+    font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+    .breadcrumb_title {
+        font-size: 2rem;
+    }
+}
+
+.my_dashboard_review {
+    background-color: #fff;
+    border: 1px solid rgba(3, 80, 111, 0.25);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.featured_property {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 0;
+    padding: 0 0 30px;
+    transition: all 0.3s ease;
+
+    @media (max-width: 520px) {
+        display: block;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(3, 80, 111, 0.25);
+    }
+
+    .thumb {
+        background-color: #1d293e;
+        border-radius: 8px;
+        display: flex;
+        overflow: hidden;
+        height: 126px;
+        max-width: 150px;
+        margin: 0;
+        position: relative;
+
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+
+        @media (max-width: 520px) {
+            height: auto;
+            max-width: 100%;
+        }
+
+        img {
+            opacity: 0.6;
+            object-fit: cover;
+        }
+
+        .thmb_cntnt {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .details {
+        .tc_content {
+            padding: 25px 0 10px;
+            position: relative;
+
+            h4 {
+                font-size: 21px;
+                color: #222;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $primary-color;
+                line-height: 1.2;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+.status-tag {
+    background-color: rgb(5, 113, 156);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 40%;
+    margin: 0 auto;
+    padding: 11px 0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        width: 60%;
+        padding: 6px 0;
+        font-size: 13px;
+    }
+}
+
+.btn-delete {
+    display: inline-block;
+    background-color: rgb(247, 247, 247);
+    border-radius: 8px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #fff;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    span {
+        color: $primary-color;
+        font-size: 20px;
+    }
+}

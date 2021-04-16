@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9fcfb;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+input:focus::placeholder,
+input:focus::-webkit-input-placeholder,
+input:focus::-moz-placeholder,
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    font-family: inherit;
+    padding: 0 15px;
+    border: none;
+    height: 60px;
+    border-left: 1px solid #eee;
+    background: url(../img/down.png) no-repeat 96% 52%;
+    width: 100%;
+    -webkit-appearance: none;
+    font-size: 15px;
+    color: $primary-color;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: $secondary-color;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+/* === BOOTSTRAP RESETS === */
+.text-primary {
+    color: $primary-color !important;
+}
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover,
+    &:focus {
+        background-color: lighten($primary-color, 6%);
+        border-color: transparent;
+        box-shadow: none;
+    }
+
+    &.focus {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+.btn-outline-primary {
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+}

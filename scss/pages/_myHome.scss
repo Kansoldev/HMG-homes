@@ -1,0 +1,126 @@
+.home {
+    position: relative;
+    min-height: 600px;
+
+    &::before {
+        @include before;
+    }
+}
+
+.banner-info {
+    @include position(absolute, 120px) {
+        padding: 25px;
+        z-index: 9;
+    }
+
+    @media (min-width: 768px) {
+        top: 200px;
+        padding: 30px 80px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+            font-size: 42px;
+        }
+    }
+
+    p {
+        line-height: 1.25;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 1.5em;
+    }
+
+    small {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+
+.custom-direction {
+    background: $primary-color;
+    display: inline-block;
+    border-radius: 7px;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    z-index: 99;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+
+    @media (max-width: 992px) {
+        bottom: -25px;
+        right: 50%;
+        top: auto;
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+    }
+
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+}
+
+.haveAproject {
+    @include background-image("../img/insurance.jpg");
+    position: relative;
+    border-radius: 10px;
+    padding: 64px 69px 54px 78px;
+
+    @media (max-width: 767px) {
+        padding: 42px 19px 36px 30px;
+    }
+
+    &::before {
+        @include before() {
+            border-radius: 10px;
+            opacity: 0.9;
+            background-image: -moz-linear-gradient(
+                0deg,
+                $primary-color 0%,
+                $secondary-color 100%
+            );
+            background-image: -webkit-linear-gradient(
+                0deg,
+                $primary-color 0%,
+                $secondary-color 100%
+            );
+            background-image: -ms-linear-gradient(
+                0deg,
+                $primary-color 0%,
+                $secondary-color 100%
+            );
+        }
+    }
+
+    .wantToWork-caption {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 13px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 18px;
+                font-size: 31px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@mixin background-image(
+    $url,
+    $repeat: no-repeat,
+    $position: center,
+    $size: cover
+) {
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin flex($wrap: wrap, $align-items: center, $justify-content: center) {
+    display: flex;
+    flex-wrap: $wrap;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @content;
+}
+
+@mixin position(
+    $pos: relative,
+    $top: initial,
+    $right: initial,
+    $bottom: initial,
+    $left: initial
+) {
+    position: $pos;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+    @content;
+}
