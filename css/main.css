@@ -83,6 +83,15 @@ p {
 }
 
 /* === BOOTSTRAP RESETS === */
+@media (min-width: 1200px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1250px;
+  }
+}
 .text-primary {
   color: #13506f !important;
 }
@@ -152,18 +161,6 @@ button {
   padding: 20px 8px;
   transition: all 0.4s ease 0s;
   border-bottom: 1px solid rgba(226, 226, 226, 0.3);
-}
-@media (min-width: 768px) {
-  #site-header .container-fluid {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
-@media (min-width: 900px) {
-  #site-header .container-fluid {
-    padding-right: 70px;
-    padding-left: 70px;
-  }
 }
 #site-header.nav-fixed {
   background-color: #fff !important;
@@ -273,7 +270,7 @@ button {
   display: block;
   transition: all 0.5s ease;
   padding: 10px 0;
-  font-size: 18px;
+  font-size: 1rem;
   color: #13506f;
   font-weight: 400;
   opacity: 0.8;
