@@ -22,12 +22,75 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/index-cards.css" />
         <style>
-            .text-underline {
-                text-decoration: underline !important;
+            .confidence {
+                margin: 150px 0 80px;
             }
 
-            .text-underline:hover {
-                text-decoration: underline !important;
+            @media (min-width: 992px) {
+                .confidence {
+                    margin: 150px 30px 80px;
+                }
+            }
+
+            .sell-title {
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            @media (min-width: 768px) {
+                .sell-title {
+                    font-size: 3.4rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .sell-things div:first-child,
+                .sell-things div:nth-child(2) {
+                    flex-basis: 85%;
+                    margin: 0 auto;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .sell-things div:first-child {
+                    flex-basis: 60%;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .sell-things div:nth-child(2) {
+                    flex: 1;
+                }
+            }
+
+            /* .work-agent {
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+            } */
+
+            @media (min-width: 768px) {
+                .work-agent {
+                    padding: 48px 0;
+                }
+            }
+
+            .work-agent img {
+                max-width: 100%;
+            }
+
+            @media (min-width: 500px) {
+                .work-agent img {
+                    width: 320px;
+                }
+            }
+
+            @media (min-width: 320px) and (max-width: 360px) {
+                .work-agent h2 {
+                    font-size: 1.55rem;
+                }
+            }
+
+            .work-agent div:first-of-type {
+                margin: 0 25px;
             }
         </style>
     </head>
@@ -236,80 +299,62 @@
         <!-- End Header Area -->
 
         <!-- Featured properties -->
-        <section class="confidence" style="margin: 150px 0">
+        <section class="confidence">
             <div class="container-fluid">
-                <h2
-                    class="text-center"
-                    style="font-weight: 700; font-size: 60px"
-                >
+                <h2 class="text-center sell-title text-primary">
                     Sell with confidence
                 </h2>
 
-                <p class="text-center mb-0 mt-4" style="font-size: 20px">
+                <p
+                    class="text-center mb-4 mt-3 font-300"
+                    style="font-size: 20px"
+                >
                     hmghomes is making it easier and saver to sell your home
                 </p>
 
-                <div class="d-flex px-5" style="gap: 2em; margin-top: 40px">
-                    <div
-                        style="
-                            flex-basis: 67%;
-                            box-shadow: rgb(0 0 0 / 30%) 0px 4px 8px 0px;
-                        "
-                    >
-                        <div
-                            class="d-flex bg-white"
-                            style="padding-top: 48px; padding-bottom: 48px"
-                        >
-                            <img
-                                src="img/download.png"
-                                style="width: 320px"
-                                alt=""
-                            />
+                <div class="sell-things d-flex flex-wrap" style="gap: 2em">
+                    <div class="bg-white d-flex flex-wrap work-agent shadow">
+                        <img src="img/download.png" alt="" />
 
-                            <div class="align-self-center">
-                                <h2 class="mb-0 font-weight-bold">
-                                    Work with an agent
-                                </h2>
+                        <div class="align-self-center">
+                            <h2 class="mb-0 font-weight-bold text-primary">
+                                Work with an agent
+                            </h2>
 
-                                <p class="my-3">
-                                    Zillow Premier Agents are among the best in
-                                    the business. Learn how to
-                                    <a
-                                        href="#"
-                                        class="d-block text-info text-underline"
-                                        >pick the right one for you.</a
-                                    >
-                                </p>
+                            <p class="my-3 font-300">
+                                HMG Agents are among the best in the business.
+                                Learn how to
+                                <a
+                                    href="#"
+                                    class="d-inline-block text-info text-underline"
+                                    >Pick the right one for you.</a
+                                >
+                            </p>
 
-                                <button class="btn btn-outline-primary btn-lg">
-                                    Search now
-                                </button>
-                            </div>
+                            <button
+                                class="btn btn-outline-primary btn-lg mb-4 mb-md-0"
+                            >
+                                Search now
+                            </button>
                         </div>
                     </div>
 
-                    <div
-                        class="bg-white p-4"
-                        style="
-                            flex-basis: 33%;
-                            box-shadow: rgb(0 0 0 / 30%) 0px 4px 8px 0px;
-                        "
-                    >
+                    <div class="bg-white p-4 w-100 shadow">
                         <div
-                            class="align-self-center text-center"
-                            style="padding-top: 48px; padding-bottom: 48px"
+                            class="d-flex flex-column justify-content-center h-100 align-items-start"
                         >
-                            <h2 class="mb-0 font-weight-bold">
+                            <h2 class="mb-0 font-weight-bold text-primary">
                                 Sell it yourself
                             </h2>
 
-                            <p class="my-3">
+                            <p class="my-3 font-300">
                                 Reach the largest audience of shoppers with a
-                                free Zillow listing. Start by learning
+                                free HMG listing. Start by learning
+
                                 <a
                                     href="#"
-                                    class="d-block text-underline text-info"
-                                    >how to "sell for sale by owner."</a
+                                    class="d-inline-block text-underline text-info"
+                                    >How to sell for sale by owner.</a
                                 >
                             </p>
 

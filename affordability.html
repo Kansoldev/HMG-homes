@@ -22,12 +22,34 @@
         <link rel="stylesheet" href="css/main.css" />
 
         <style>
-            .text-underline {
-                text-decoration: underline !important;
+            .something {
+                margin: 130px 20px 85px;
             }
 
-            .text-underline:hover {
-                text-decoration: underline !important;
+            @media (min-width: 768px) {
+                .something {
+                    margin: 160px 60px 85px;
+                }
+            }
+
+            .aff-input {
+                width: 100%;
+            }
+
+            form div {
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: 768px) {
+                form div {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .w-md-25 {
+                    width: 25% !important;
+                }
             }
         </style>
     </head>
@@ -235,10 +257,11 @@
         </header>
         <!-- End Header Area -->
 
-        <section class="something" style="margin: 180px 70px 85px">
+        <section class="something">
+            <!-- style="margin: 180px 70px 85px" -->
             <h1>Rent Affordability Calculator</h1>
 
-            <p class="my-3">
+            <p class="my-3 font-weight-lighter">
                 This calculator shows rentals that fit your budget. Savings,
                 debt and other expenses could impact the amount you want to
                 spend on rent each month. Input your net (after tax) income and
@@ -248,33 +271,36 @@
                 at 25%. Actual tax rates vary.
             </p>
 
-            <form action="" class="d-flex align-items-center">
-                <div class="w-100" style="flex: 1">
+            <form
+                action=""
+                class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-md-between"
+            >
+                <div class="w-100 w-md-25">
                     <label for="monthly" class="d-block"
                         >Monthly net income</label
                     >
 
                     <input
                         type="text"
-                        class="p-2"
+                        class="p-2 aff-input"
                         placeholder="income after taxes"
                     />
                 </div>
 
-                <div class="w-100" style="flex: 1">
+                <div class="w-100 w-md-25">
                     <label for="monthly" class="d-block">Monthly Debts</label>
 
-                    <input type="text" class="p-2" placeholder="0" />
+                    <input type="text" class="p-2 aff-input" placeholder="0" />
                 </div>
 
-                <div class="w-100" style="flex: 1">
+                <div class="w-100 w-md-25">
                     <label for="monthly" class="d-block">Rental location</label>
 
-                    <input type="text" class="p-2" />
+                    <input type="text" class="p-2 aff-input" />
                 </div>
 
                 <button
-                    class="align-self-end btn btn-primary px-5 py-3"
+                    class="align-self-end btn btn-primary px-4 py-2"
                     style="font-size: 1.1rem"
                 >
                     Calculate

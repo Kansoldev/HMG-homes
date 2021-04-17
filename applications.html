@@ -20,14 +20,26 @@
         <link rel="stylesheet" href="css/bootstrap-select.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/main.css" />
-
         <style>
-            .text-underline {
-                text-decoration: underline !important;
+            .app-img {
+                object-fit: cover;
+                object-position: center;
             }
 
-            .text-underline:hover {
-                text-decoration: underline !important;
+            @media (min-width: 768px) {
+                .app-img {
+                    height: 400px;
+                }
+            }
+
+            .something {
+                margin: 130px 0 85px;
+            }
+
+            @media (min-width: 768px) {
+                .something {
+                    margin: 160px 0 85px;
+                }
             }
         </style>
     </head>
@@ -235,22 +247,24 @@
         </header>
         <!-- End Header Area -->
 
-        <section class="something" style="margin: 180px 0 85px">
+        <section class="something">
             <div class="container">
                 <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.2)">
                     <div class="card-header p-0">
                         <img
                             src="img/HMG-woman.jpg"
-                            class="w-100"
-                            height="450"
+                            class="w-100 app-img"
                             alt=""
                         />
                     </div>
 
                     <div class="card-body">
-                        <div class="d-flex p-4" style="gap: 2em">
-                            <div style="flex: 1">
-                                <h1 class="font-weight-bold">
+                        <div
+                            class="d-flex flex-wrap flex-md-nowrap"
+                            style="gap: 2em"
+                        >
+                            <div class="align-self-md-center">
+                                <h1 class="font-weight-bold text-primary">
                                     Find a rental you love
                                 </h1>
 
@@ -265,7 +279,7 @@
                                 </button>
                             </div>
 
-                            <div class="align-self-center" style="flex: 1">
+                            <div class="align-self-center">
                                 <p>
                                     <b>Save</b> time and avoid multiple fees
                                     with one application, one payment.
