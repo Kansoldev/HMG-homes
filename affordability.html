@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/bootstrap-select.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/index-cards.css" />
+
         <style>
             .text-underline {
                 text-decoration: underline !important;
@@ -141,7 +141,9 @@
 
                             <div class="dropdown-container">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Sell</a>
+                                    <a class="nav-link" href="sell.html"
+                                        >Sell</a
+                                    >
                                 </li>
 
                                 <div class="dropdown-content">
@@ -191,9 +193,7 @@
                                             <div class="col-md">
                                                 <h4>Renter tools</h4>
 
-                                                <a href="applications.html"
-                                                    >Applications</a
-                                                >
+                                                <a href="#">Applications</a>
                                                 <a href="#">Payments</a>
                                                 <a href="#">Renters guide</a>
                                                 <a href="#"
@@ -235,6 +235,207 @@
         </header>
         <!-- End Header Area -->
 
-        ,container
+        <section class="something" style="margin: 180px 70px 85px">
+            <h1>Rent Affordability Calculator</h1>
+
+            <p class="my-3">
+                This calculator shows rentals that fit your budget. Savings,
+                debt and other expenses could impact the amount you want to
+                spend on rent each month. Input your net (after tax) income and
+                the calculator will display rentals up to 40% of your estimated
+                gross income. Property managers typically use gross income to
+                qualify applicants, so the tool assumes your net income is taxed
+                at 25%. Actual tax rates vary.
+            </p>
+
+            <form action="" class="d-flex align-items-center">
+                <div class="w-100" style="flex: 1">
+                    <label for="monthly" class="d-block"
+                        >Monthly net income</label
+                    >
+
+                    <input
+                        type="text"
+                        class="p-2"
+                        placeholder="income after taxes"
+                    />
+                </div>
+
+                <div class="w-100" style="flex: 1">
+                    <label for="monthly" class="d-block">Monthly Debts</label>
+
+                    <input type="text" class="p-2" placeholder="0" />
+                </div>
+
+                <div class="w-100" style="flex: 1">
+                    <label for="monthly" class="d-block">Rental location</label>
+
+                    <input type="text" class="p-2" />
+                </div>
+
+                <button
+                    class="align-self-end btn btn-primary px-5 py-3"
+                    style="font-size: 1.1rem"
+                >
+                    Calculate
+                </button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-about">
+                            <div class="fs-logo">
+                                <img
+                                    src="img/logo-white.png"
+                                    class="site-logo"
+                                    alt=""
+                                />
+                            </div>
+
+                            <p>
+                                HMG Homes is a Luxury Real Estate Company. At
+                                HMG Homes, we focus on bringing our esteemed
+                                customers a combination of style and comfort.
+                            </p>
+
+                            <div class="fs-social">
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Links</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Contact us</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Login</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Signup</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Help</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Contact Support</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-widget">
+                            <h5>Contact us</h5>
+
+                            <ul>
+                                <li class="footer-item">Lagos, Nigeria</li>
+
+                                <li class="footer-item">
+                                    Phone no: +2348170943585
+                                </li>
+
+                                <li class="footer-item">
+                                    Email: contact@hmghomes.com
+                                </li>
+                            </ul>
+
+                            <ul class="mt-4">
+                                <li class="footer-item">Oslo, Norway</li>
+
+                                <li class="footer-item">
+                                    Phone no: +47 973 25 588
+                                </li>
+
+                                <li class="footer-item">
+                                    Email: contact@hmghomes.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="copyright-text d-block"
+                    >HMG Homes, &copy; 2021 All rights reserved.</span
+                >
+            </div>
+        </footer>
+        <!-- // End Footer // -->
+
+        <button id="movetop" title="Go to top">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/currency.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".counter").counterUp({
+                    delay: 10,
+                    time: 1000,
+                });
+            });
+        </script>
     </body>
 </html>
