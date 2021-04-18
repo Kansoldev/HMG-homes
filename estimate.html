@@ -21,78 +21,6 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/themify-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <style>
-            .confidence {
-                margin: 150px 0 80px;
-            }
-
-            @media (min-width: 992px) {
-                .confidence {
-                    margin: 150px 30px 80px;
-                }
-            }
-
-            .sell-title {
-                font-weight: 700;
-                font-size: 2rem;
-            }
-
-            @media (min-width: 768px) {
-                .sell-title {
-                    font-size: 3.4rem;
-                }
-            }
-
-            @media (min-width: 768px) {
-                .sell-things div:first-child,
-                .sell-things div:nth-child(2) {
-                    flex-basis: 85%;
-                    margin: 0 auto;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                .sell-things div:first-child {
-                    flex-basis: 60%;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                .sell-things div:nth-child(2) {
-                    flex: 1;
-                }
-            }
-
-            /* .work-agent {
-                box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-            } */
-
-            @media (min-width: 768px) {
-                .work-agent {
-                    padding: 48px 0;
-                }
-            }
-
-            .work-agent img {
-                max-width: 100%;
-            }
-
-            @media (min-width: 500px) {
-                .work-agent img {
-                    width: 320px;
-                }
-            }
-
-            @media (min-width: 320px) and (max-width: 360px) {
-                .work-agent h2 {
-                    font-size: 1.55rem;
-                }
-            }
-
-            .work-agent div:first-of-type {
-                margin: 0 25px;
-            }
-        </style>
     </head>
 
     <body>
@@ -106,9 +34,9 @@
             <div class="site-mobile-menu-body"></div>
         </div>
 
-        <!-- Header Area -->
+        <!-- Header Start -->
         <header
-            class="site-navbar py-3 py-md-4 js-sticky-header bg-primary site-navbar-target"
+            class="site-navbar py-3 py-md-4 js-sticky-header site-navbar-target"
             role="banner"
         >
             <div class="container">
@@ -135,7 +63,7 @@
                                     class="has-children"
                                     style="margin-right: 10px"
                                 >
-                                    <a href="#" class="nav-link">Buy</a>
+                                    <a href="#" class="nav-link active">Buy</a>
 
                                     <ul class="dropdown">
                                         <li>
@@ -174,7 +102,7 @@
                                     class="has-children"
                                     style="margin-right: 10px"
                                 >
-                                    <a href="sell.html" class="nav-link active"
+                                    <a href="sell.html" class="nav-link"
                                         >Sell</a
                                     >
 
@@ -324,75 +252,89 @@
         </header>
         <!-- End Header Area -->
 
-        <!-- Featured properties -->
-        <section class="confidence">
-            <div class="container-fluid">
-                <h2 class="text-center sell-title text-primary">
-                    Sell with confidence
-                </h2>
+        <!-- Hero Area -->
+        <section
+            class="hero-area d-flex align-items-center justify-content-center text-center"
+            style="background-image: url('img/banner-img.jpg')"
+        >
+            <div class="hero-content">
+                <h1 class="text-white hero-title mb-4 mb-md-0">
+                    How much is my home worth?
+                </h1>
 
-                <p
-                    class="text-center mb-4 mt-3 font-300"
-                    style="font-size: 20px"
+                <span
+                    class="text-white my-3 f-300 d-none d-md-block"
+                    style="font-size: 1.3em; opacity: 0.95"
                 >
-                    hmghomes is making it easier and saver to sell your home
-                </p>
+                    Enter your address to get your free estimate instantly, or
+                    request a no‑obligation market value offer from HMG.
+                </span>
 
-                <div class="sell-things d-flex flex-wrap" style="gap: 2em">
-                    <div class="bg-white d-flex flex-wrap work-agent shadow">
-                        <img src="img/download.png" alt="" />
+                <nav class="home-nav d-none d-md-block">
+                    <ul class="home-nav-list">
+                        <li class="home-nav-item">
+                            <a class="home-nav-link active" href="#">BUY</a>
+                        </li>
 
-                        <div class="align-self-center">
-                            <h2 class="mb-0 font-weight-bold text-primary">
-                                Work with an agent
-                            </h2>
-
-                            <p class="my-3 font-300">
-                                HMG Agents are among the best in the business.
-                                Learn how to
-                                <a
-                                    href="#"
-                                    class="d-inline-block text-info text-underline"
-                                    >Pick the right one for you.</a
-                                >
-                            </p>
-
-                            <button
-                                class="btn btn-outline-primary btn-lg mb-4 mb-md-0"
+                        <li class="home-nav-item">
+                            <a class="home-nav-link" href="rentals.html"
+                                >RENT/LEASE</a
                             >
-                                Search now
-                            </button>
-                        </div>
-                    </div>
+                        </li>
 
-                    <div class="bg-white p-4 w-100 shadow">
-                        <div
-                            class="d-flex flex-column justify-content-center h-100 align-items-start"
-                        >
-                            <h2 class="mb-0 font-weight-bold text-primary">
-                                Sell it yourself
-                            </h2>
+                        <li class="home-nav-item">
+                            <a class="home-nav-link" href="pre-approval.html"
+                                >PRE-APPROVAL</a
+                            >
+                        </li>
 
-                            <p class="my-3 font-300">
-                                Reach the largest audience of shoppers with a
-                                free HMG listing. Start by learning
+                        <li class="home-nav-item">
+                            <a class="home-nav-link" href="just-sold.html"
+                                >JUST SOLD</a
+                            >
+                        </li>
 
-                                <a
-                                    href="#"
-                                    class="d-inline-block text-underline text-info"
-                                    >How to sell for sale by owner.</a
-                                >
-                            </p>
+                        <li class="home-nav-item">
+                            <a class="home-nav-link" href="#">HOME VALUE</a>
+                        </li>
+                    </ul>
+                </nav>
 
-                            <button class="btn btn-outline-primary btn-lg">
-                                Create a listing
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                <form
+                    id="propertyForm"
+                    class="property-form"
+                    action="search.html"
+                >
+                    <span
+                        class="input-group-btn my-5 my-md-0"
+                        style="width: 60%; height: 56px"
+                    >
+                        <input
+                            type="text"
+                            name="name"
+                            class="form-control py-4"
+                            placeholder="Enter your home address"
+                            id=""
+                        />
+                    </span>
+
+                    <button
+                        type="submit"
+                        id="submit"
+                        class="btn btn-primary search"
+                    >
+                        Get Started
+                    </button>
+                </form>
             </div>
         </section>
-        <!-- End Featured Properties -->
+        <!-- End Hero Area -->
+
+        <section class="faq my-5">
+            <h3 class="text-center font-weight-bold">
+                Frequently Asked Questions
+            </h3>
+        </section>
 
         <!-- Footer -->
         <footer class="footer-section">
@@ -555,6 +497,24 @@
                     $("#preloader-active").delay(450).fadeOut();
                 });
             });
+
+            // fetch(
+            //     "https://realty-mole-property-api.p.rapidapi.com/properties?address=5500%20Grand%20Lake%20Dr%2C%20San%20Antonio%2C%20TX%2078244&propertyType=land",
+            //     {
+            //         method: "GET",
+            //         headers: {
+            //             "x-rapidapi-key":
+            //                 "c15c23b586msh5cddfaaa76098aap1273d6jsn58376803f268",
+            //             "x-rapidapi-host":
+            //                 "realty-mole-property-api.p.rapidapi.com",
+            //         },
+            //     }
+            // )
+            //     .then((response) => response.json())
+            //     .then((data) => console.log(data))
+            //     .catch((err) => {
+            //         console.error(err);
+            //     });
         </script>
     </body>
 </html>

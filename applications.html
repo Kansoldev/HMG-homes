@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/bootstrap-select.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/themify-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
         <style>
             .app-img {
@@ -45,204 +46,228 @@
     </head>
 
     <body>
-        <!-- Preloader Start -->
-        <div id="preloader-active">
-            <div
-                class="preloader d-flex align-items-center justify-content-center"
-            >
-                <div class="preloader-inner position-relative">
-                    <div class="preloader-circle"></div>
-                    <div class="preloader-img pere-text">
-                        <img src="img/logo.png" alt="" />
-                    </div>
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close my-3">
+                    <span class="ti-close js-menu-toggle"></span>
                 </div>
             </div>
+
+            <div class="site-mobile-menu-body"></div>
         </div>
-        <!-- Preloader End -->
 
         <!-- Header Area -->
-        <header id="site-header" class="fixed-top bg-primary">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg stroke px-0">
-                    <a href="index.html">
-                        <img
-                            src="img/logo-white.png"
-                            class="site-logo"
-                            alt="logo"
-                        />
-                    </a>
-
-                    <div class="header-relative order-lg-3 d-block d-lg-none">
-                        <div class="user-menu">
-                            <div class="user-name">
-                                <span>
-                                    <i class="fa fa-user-circle-o"></i>
-                                </span>
-
-                                <div class="user-name-title">Hi, user!</div>
-                            </div>
-
-                            <ul>
-                                <li>
-                                    <a href="login.html">Log in</a>
-                                </li>
-
-                                <li>
-                                    <a href="signup.html">Sign up</a>
-                                </li>
-                            </ul>
-                        </div>
+        <header
+            class="site-navbar py-3 py-md-4 js-sticky-header bg-primary site-navbar-target"
+            role="banner"
+        >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-xl-1">
+                        <a href="index.html" class="mb-0">
+                            <img
+                                src="img/logo-white.png"
+                                class="img-fluid site-logo"
+                                alt=""
+                            />
+                        </a>
                     </div>
 
-                    <button
-                        class="navbar-toggler collapsed"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarTogglerDemo02"
-                        aria-controls="navbarTogglerDemo02"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span
-                            class="navbar-toggler-icon fa icon-expand fa-bars"
-                        ></span>
-                        <span
-                            class="navbar-toggler-icon fa icon-close fa-times"
-                        ></span>
-                    </button>
+                    <div class="col-12 col-md-9 d-none d-xl-block">
+                        <nav
+                            class="site-navigation position-relative text-right"
+                            role="navigation"
+                        >
+                            <ul
+                                class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block text-center"
+                            >
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="#" class="nav-link">Buy</a>
 
-                    <div
-                        class="collapse navbar-collapse"
-                        id="navbarTogglerDemo02"
-                    >
-                        <ul class="navbar-nav mx-lg-auto">
-                            <div class="dropdown-container">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Buy</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a
+                                                href="homesforsale.html"
+                                                class="nav-link"
+                                                >Homes for sale</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >New Home Construction</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >For sale by owners</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Recent home sales</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </li>
 
-                                <div class="dropdown-content w-25">
-                                    <div class="dropdown-content-item">
-                                        <h4>Homes for Sale</h4>
+                                <li>
+                                    <a href="#" class="nav-link">Properties</a>
+                                </li>
 
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <a href="homesforsale.html"
-                                                    >Homes for Sale</a
-                                                >
-                                                <a href="#"
-                                                    >New Home Construction</a
-                                                >
-                                                <a href="#"
-                                                    >For sale by owners</a
-                                                >
-                                                <a href="#"
-                                                    >Recent home sales</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="properties.html"
-                                    >Properties</a
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
                                 >
-                            </li>
+                                    <a href="#" class="nav-link">Sell</a>
 
-                            <div class="dropdown-container">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="sell.html"
-                                        >Sell</a
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#" class="nav-link">
+                                                See your homes estimate</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Home values</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Sell with hmg offers</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Find a seller's agent</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Post for sale by owner</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="#" class="nav-link active"
+                                        >Rent/lease</a
+                                    >
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#" class="nav-link">
+                                                Rental buildings</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Houses for rent</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a
+                                                href="applications.html"
+                                                class="nav-link active"
+                                                >Applications</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Payments</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Renters guide</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a
+                                                href="affordability.html"
+                                                class="nav-link"
+                                                >Affordability calculator</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="#testimonials-section"
+                                        class="nav-link"
+                                        >Luxury apartments</a
                                     >
                                 </li>
 
-                                <div class="dropdown-content">
-                                    <div class="dropdown-content-item">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <h4>Resources</h4>
-
-                                                <a href="#">
-                                                    See your homes estimate
-                                                </a>
-
-                                                <a href="#">Home values</a>
-                                            </div>
-
-                                            <div class="col-md">
-                                                <h4>Selling Options</h4>
-
-                                                <a href="#"> Sell with hmg </a>
-                                                <a href="#">
-                                                    Find a seller's agent
-                                                </a>
-                                                <a href="#"
-                                                    >Post for sale by owner</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dropdown-container">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Rent/lease</a>
+                                <li>
+                                    <a href="#" class="nav-link">My Home</a>
                                 </li>
 
-                                <div class="dropdown-content">
-                                    <div class="dropdown-content-item">
-                                        <div class="row">
-                                            <div class="col-md-7">
-                                                <h4>Search for rentals</h4>
-
-                                                <a href="#">Rental buildings</a>
-                                                <a href="#">Houses for rent</a>
-                                            </div>
-
-                                            <div class="col-md">
-                                                <h4>Renter tools</h4>
-
-                                                <a href="#">Applications</a>
-                                                <a href="#">Payments</a>
-                                                <a href="#">Renters guide</a>
-                                                <a href="#"
-                                                    >Affordability calculator</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    href="luxury-apartments.html"
-                                    >Luxury Apartments</a
+                                <li
+                                    class="d-xl-none"
+                                    style="padding-left: 20px"
                                 >
-                            </li>
+                                    <a
+                                        href="login.html"
+                                        class="btn btn-primary text-white w-100 my-3"
+                                    >
+                                        Login
+                                    </a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="myhome.html"
-                                    >My Home</a
+                                <li
+                                    class="d-xl-none"
+                                    style="padding-left: 20px"
                                 >
-                            </li>
-                        </ul>
-
-                        <div class="mt-3 mt-md-0 d-none d-lg-flex">
-                            <a href="login.html" class="btn" id="login">
-                                Login
-                            </a>
-
-                            <a href="signup.html" class="btn" id="signup">
-                                Signup
-                            </a>
-                        </div>
+                                    <a
+                                        href="signup.html"
+                                        class="btn btn-outline-primary w-100"
+                                    >
+                                        Signup
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                </nav>
+
+                    <div class="col-2 mt-3 mt-md-0 d-none d-lg-flex">
+                        <a href="login.html" class="btn" id="login"> Login </a>
+
+                        <a href="signup.html" class="btn" id="signup">
+                            Signup
+                        </a>
+                    </div>
+
+                    <div
+                        class="col-6 d-inline-block d-xl-none ml-md-0 py-3"
+                        style="position: relative; top: 3px"
+                    >
+                        <a
+                            href="#"
+                            class="site-menu-toggle js-menu-toggle float-right"
+                            ><span class="ti-menu h3"></span
+                        ></a>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- End Header Area -->
@@ -456,7 +481,9 @@
         <script src="js/bootstrap-select.min.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/navbar.js"></script>
         <script src="js/currency.js"></script>
         <script>
             $(document).ready(function () {

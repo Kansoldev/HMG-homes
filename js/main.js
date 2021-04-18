@@ -1,8 +1,9 @@
 $(function () {
     // Preloader
-    $(function () {
-        $("#preloader-active").delay(450).fadeOut("slow");
-    });
+    $(".loader").fadeOut();
+    $("#preloader-active").delay(450).fadeOut("slow");
+
+    $(".js-sticky-header").sticky({ topSpacing: 0 });
 
     // Background Set
     $(".set-bg").each(function () {
@@ -11,16 +12,6 @@ $(function () {
     });
 
     $(window).on("scroll", function () {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 80) {
-            $("#site-header").addClass("nav-fixed");
-        } else {
-            $("#site-header").removeClass("nav-fixed");
-        }
-    });
-
-    $(window).on("load", function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 80) {

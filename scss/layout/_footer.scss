@@ -1,6 +1,10 @@
 .footer-section {
     background: $primary-color;
-    padding-top: 70px;
+    padding-top: 40px;
+
+    @media (min-width: 768px) {
+        padding-top: 70px;
+    }
 }
 
 .fs-about {
@@ -19,7 +23,7 @@
     p {
         color: #fff;
         line-height: 27px;
-        opacity: .6;
+        opacity: 0.6;
         margin-bottom: 25px;
     }
 
@@ -49,20 +53,20 @@
         color: #fff;
         text-transform: uppercase;
         font-weight: 600;
-        margin-bottom: .85rem;
+        margin-bottom: 0.85rem;
     }
 
     .footer-item,
-    .footer-link{
+    .footer-link {
         font-size: 14px;
         color: #fff;
-        opacity: .6;
+        opacity: 0.6;
         line-height: 30px;
     }
 
     p {
         color: #fff;
-        opacity: .6;
+        opacity: 0.6;
     }
 }
 
@@ -73,10 +77,10 @@
     color: #fff;
     opacity: 0.6;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding: 25px 0;
 
     @media (min-width: 768px) {
         margin-top: 40px;
     }
-} 
+}

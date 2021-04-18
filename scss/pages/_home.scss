@@ -85,11 +85,11 @@
 .property-form {
     @include flex;
     width: auto;
-    margin: 15px 25px 45px;
+    // margin: 15px 25px 45px;
 
     @media (min-width: 900px) {
         width: 1000px;
-        margin: 0 0 45px;
+        margin: 0 auto 45px;
     }
 
     .search {
