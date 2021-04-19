@@ -522,6 +522,11 @@ button {
 .site-logo {
   max-width: 60px;
 }
+@media (min-width: 768px) {
+  .site-logo {
+    max-width: 85px;
+  }
+}
 
 #movetop {
   display: none;

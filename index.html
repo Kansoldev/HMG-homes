@@ -21,11 +21,16 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/themify-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/index-cards.css" />
+
+        <style>
+            .sizing {
+                width: 336px;
+                height: 177px;
+            }
+        </style>
     </head>
 
     <body>
-        <!-- Preloader Start -->
         <div id="preloader-active">
             <div
                 class="preloader d-flex align-items-center justify-content-center"
@@ -38,7 +43,6 @@
                 </div>
             </div>
         </div>
-        <!-- Preloader End -->
 
         <div class="site-mobile-menu site-navbar-target">
             <div class="site-mobile-menu-header">
@@ -706,6 +710,69 @@
         </section>
         <!-- End Who We Are -->
 
+        <section style="margin: 100px 0">
+            <div class="container p-0">
+                <div class="row justify-content-around" style="gap: 2em">
+                    <div class="col-md py-4 bg-white text-center shadow">
+                        <img src="img/Buy_a_home.png" class="sizing" alt="" />
+
+                        <div>
+                            <h4 class="font-weight-bold mt-2">Buy a home</h4>
+
+                            <p class="my-4 font-300">
+                                With detailed corresponding pictures to follow,
+                                ease of home selections just got better with our
+                                abundant varieties of options that suit your
+                                imaginations of an ideal home.
+                            </p>
+
+                            <button class="btn btn-outline-primary">
+                                Search Homes
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md py-4 bg-white text-center shadow">
+                        <img src="img/sell_a_home.png" class="sizing" alt="" />
+
+                        <div>
+                            <h4 class="font-weight-bold mt-2">Sell a home</h4>
+
+                            <p class="my-4 font-300">
+                                We make home sales quick and hassle-free while
+                                you get cash offers through "HMG Homes Offers".
+                                If orthodox sales are your favourite, we also
+                                got you covered.
+                            </p>
+
+                            <button class="btn btn-outline-primary">
+                                See your options
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md py-4 bg-white text-center shadow">
+                        <img src="img/rent_a_home.png" class="sizing" alt="" />
+
+                        <div>
+                            <h4 class="font-weight-bold mt-2">Rent a home</h4>
+
+                            <p class="my-4 font-300">
+                                Your ease of access and comfort is the
+                                quintessence of our online platform. Hence, we
+                                ensure that you can shop, apply and pay rent
+                                online with zero difficulty.
+                            </p>
+
+                            <button class="btn btn-outline-primary">
+                                Find Rentals
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Joint Venture -->
         <section class="hero-card img-left bg-white">
             <a href="#">
@@ -854,9 +921,9 @@
 
                             <div class="my-4 mb-lg-0">
                                 <i
-                                    class="fa fa-exchange-alt"
+                                    class="fa fa-exchange text-primary"
                                     aria-hidden="true"
-                                    style="color: #03506f; font-size: 30px"
+                                    style="font-size: 30px"
                                 ></i>
                             </div>
 
@@ -865,8 +932,9 @@
                                     for="currency-2"
                                     style="font-size: 20px"
                                     class="d-block mb-2"
-                                    >To:&nbsp;</label
                                 >
+                                    To:&nbsp;
+                                </label>
 
                                 <select
                                     class="form-control curr-input"
