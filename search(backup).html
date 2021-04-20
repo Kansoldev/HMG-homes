@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HMG Homes - Search page</title>
+        <link rel="icon" href="img/logo.png" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/themify-icons.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close my-3">
+                    <span class="ti-close js-menu-toggle"></span>
+                </div>
+            </div>
+
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <!-- Header Area -->
+        <header
+            class="site-navbar py-3 py-md-4 js-sticky-header bg-primary site-navbar-target"
+            role="banner"
+        >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-xl-1">
+                        <a href="index.html" class="mb-0">
+                            <img
+                                src="img/logo-white.png"
+                                class="img-fluid site-logo"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-9 d-none d-xl-block">
+                        <nav
+                            class="site-navigation position-relative text-right"
+                            role="navigation"
+                        >
+                            <ul
+                                class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block text-center"
+                            >
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="#" class="nav-link">Buy</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a
+                                                href="homesforsale.html"
+                                                class="nav-link"
+                                                >Homes for sale</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >New Home Construction</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >For sale by owners</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Recent home sales</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="nav-link">Properties</a>
+                                </li>
+
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="#" class="nav-link">Sell</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#" class="nav-link">
+                                                See your homes estimate</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Home values</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Sell with hmg offers</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Find a seller's agent</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Post for sale by owner</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="#" class="nav-link active"
+                                        >Rent/lease</a
+                                    >
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#" class="nav-link">
+                                                Rental buildings</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Houses for rent</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a
+                                                href="applications.html"
+                                                class="nav-link active"
+                                                >Applications</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Payments</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Renters guide</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a
+                                                href="affordability.html"
+                                                class="nav-link"
+                                                >Affordability calculator</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="#testimonials-section"
+                                        class="nav-link"
+                                        >Luxury apartments</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="nav-link">My Home</a>
+                                </li>
+
+                                <li
+                                    class="d-xl-none"
+                                    style="padding-left: 20px"
+                                >
+                                    <a
+                                        href="login.html"
+                                        class="btn btn-primary text-white w-100 my-3"
+                                    >
+                                        Login
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="d-xl-none"
+                                    style="padding-left: 20px"
+                                >
+                                    <a
+                                        href="signup.html"
+                                        class="btn btn-outline-primary w-100"
+                                    >
+                                        Signup
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col-2 mt-3 mt-md-0 d-none d-lg-flex">
+                        <a href="login.html" class="btn" id="login"> Login </a>
+
+                        <a href="signup.html" class="btn" id="signup">
+                            Signup
+                        </a>
+                    </div>
+
+                    <div
+                        class="col-6 d-inline-block d-xl-none ml-md-0 py-3"
+                        style="position: relative; top: 3px"
+                    >
+                        <a
+                            href="#"
+                            class="site-menu-toggle js-menu-toggle float-right"
+                            ><span class="ti-menu h3"></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header Area -->
+
+        <div class="sidebar">
+            <div class="sidebar_content">
+                <div class="sidebar_advanced_search_widget">
+                    <span
+                        id="filter_close_btn"
+                        class="fa fa-close fa-2x"
+                    ></span>
+
+                    <form class="filter-form" id="accordion-5">
+                        <div class="form-group mb-4">
+                            <select
+                                class="form-control selectpicker"
+                                data-style="btn-lg"
+                                title="Select property type"
+                            >
+                                <option value="">Apartments</option>
+                                <option value="">Hotels</option>
+                                <option value="">Resorts</option>
+                                <option value="">Villas</option>
+                                <option value="">Guest Houses</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select
+                                class="form-control selectpicker"
+                                data-style="btn-lg"
+                                title="Property status"
+                            >
+                                <option value="">For Sale</option>
+                                <option value="">For Rent</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <select
+                                class="form-control selectpicker"
+                                data-style="btn-lg"
+                                id="country"
+                                title="Select country"
+                            >
+                                <option value="ireland">Ireland</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="nigeria">Nigeria</option>
+                                <option value="norway">Norway</option>
+                                <option value="sa">South Africa</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="usa">United States</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select
+                                class="form-control selectpicker"
+                                data-style="btn-lg"
+                                title="Min price"
+                            >
+                                <option value="">₦250K</option>
+                                <option value="">₦300K</option>
+                                <option value="">₦350K</option>
+                                <option value="">₦450K</option>
+                                <option value="">₦600K</option>
+                                <option value="">₦750K</option>
+                                <option value="">₦900K</option>
+                                <option value="">₦1,000,000</option>
+                                <option value="">₦2,500,000</option>
+                                <option value="">₦4,000,000</option>
+                                <option value="">₦8,000,000</option>
+                                <option value="">₦10,000,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select
+                                class="form-control selectpicker"
+                                data-style="btn-lg"
+                                title="Max price"
+                            >
+                                <option value="">₦250K</option>
+                                <option value="">₦300K</option>
+                                <option value="">₦350K</option>
+                                <option value="">₦450K</option>
+                                <option value="">₦600K</option>
+                                <option value="">₦750K</option>
+                                <option value="">₦900K</option>
+                                <option value="">₦1,000,000</option>
+                                <option value="">₦2,500,000</option>
+                                <option value="">₦4,000,000</option>
+                                <option value="">₦8,000,000</option>
+                                <option value="">₦10,000,000</option>
+                            </select>
+                        </div>
+
+                        <!-- Advanced Options -->
+                        <button
+                            type="button"
+                            class="d-block btn btn-outline-primary my-4"
+                            data-toggle="collapse"
+                            data-target="#collapseExample"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                        >
+                            <span class="fa fa-plus-circle mr-2"></span>More
+                            Options
+                        </button>
+
+                        <!-- Advanced Options Menu-->
+                        <div class="collapse my-3" id="collapseExample">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="form-group col-12 p-0">
+                                        <select
+                                            class="form-control selectpicker"
+                                            data-style="btn-lg"
+                                            id="location"
+                                            title="Select location"
+                                        ></select>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-4 py-2">
+                                        <div
+                                            class="custom-control custom-checkbox"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="check1-5"
+                                            />
+                                            <label
+                                                class="custom-control-label justify-content-start"
+                                                for="check1-5"
+                                                >Air conditioning</label
+                                            >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-4 py-2">
+                                        <div
+                                            class="custom-control custom-checkbox"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="check4-5"
+                                            />
+                                            <label
+                                                class="custom-control-label justify-content-start"
+                                                for="check4-5"
+                                                >Parking space</label
+                                            >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-4 py-2">
+                                        <div
+                                            class="custom-control custom-checkbox"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="check8-5"
+                                            />
+                                            <label
+                                                class="custom-control-label justify-content-start"
+                                                for="check8-5"
+                                                >Furnished</label
+                                            >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-4 py-2">
+                                        <div
+                                            class="custom-control custom-checkbox"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                class="custom-control-input"
+                                                id="check11-5"
+                                            />
+                                            <label
+                                                class="custom-control-label justify-content-start"
+                                                for="check11-5"
+                                                >Swimming pool</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-block btn-primary">
+                            View Results
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container filter-content">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary filter_open_btn">
+                        Show Filters
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <div
+                        class="d-flex justify-content-md-end align-items-center"
+                    >
+                        <div
+                            class="input-group border rounded input-group-lg w-auto bg-white"
+                        >
+                            <label
+                                class="input-group-text border-0 bg-transparent text-uppercase pr-1"
+                            >
+                                <i class="fa fa-align-left pr-2"></i>Sortby:
+                            </label>
+
+                            <select
+                                class="form-control selectpicker"
+                                data-width="fit"
+                                data-style="bg-transparent border-0 font-weight-600 btn-lg pr-3"
+                                name="sortby"
+                            >
+                                <option value="">Price(low to high)</option>
+                                <option value="">Price(high to low)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Property Section Begin -->
+        <section class="property-section" style="margin-top: 40px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item">
+                            <div
+                                class="pi-pic set-bg"
+                                data-setbg="img/property/property-1.jpg"
+                            >
+                                <div class="label">For rent</div>
+                            </div>
+
+                            <div class="pi-text">
+                                <div class="pt-price">$ 289.0</div>
+                                <h5><a href="#">Home in Merrick Way</a></h5>
+                                <p>
+                                    <span class="icon_pin_alt"></span> 3 Middle
+                                    Winchendon Rd, Rindge, NH 03461
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item">
+                            <div
+                                class="pi-pic set-bg"
+                                data-setbg="img/property/property-2.jpg"
+                            >
+                                <div class="label c-red">For rent</div>
+                            </div>
+                            <div class="pi-text">
+                                <div class="pt-price">$ 289.0</div>
+                                <h5><a href="#">Unimont Aurum</a></h5>
+                                <p>
+                                    <span class="icon_pin_alt"></span> Gut
+                                    No.102, Opp. HP Petrol Pump, Karjat
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item">
+                            <div
+                                class="pi-pic set-bg"
+                                data-setbg="img/property/property-2.jpg"
+                            >
+                                <div class="label c-red">For rent</div>
+                            </div>
+                            <div class="pi-text">
+                                <div class="pt-price">$ 289.0</div>
+                                <h5><a href="#">Vrindavan Flora</a></h5>
+                                <p>
+                                    <span class="icon_pin_alt"></span> No. 15,
+                                    16, 17-1A And 17-2, Rasayani, Rasayani
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item">
+                            <div
+                                class="pi-pic set-bg"
+                                data-setbg="img/property/property-4.jpg"
+                            >
+                                <div class="label c-red">For rent</div>
+                            </div>
+                            <div class="pi-text">
+                                <div class="pt-price">$ 289.0</div>
+                                <h5><a href="#">Shramik Vaibhav</a></h5>
+                                <p>
+                                    <span class="icon_pin_alt"></span> 12 Pt at
+                                    Shedung, Panvel, Raigarh, Navi Mumbai
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item">
+                            <div
+                                class="pi-pic set-bg"
+                                data-setbg="img/property/property-5.jpg"
+                            >
+                                <div class="label c-magenta">For rent</div>
+                            </div>
+                            <div class="pi-text">
+                                <div class="pt-price">$ 289.0</div>
+                                <h5><a href="#">Poddar Wondercity</a></h5>
+                                <p>
+                                    <span class="icon_pin_alt"></span> Badlapur
+                                    East, Beyond Thane
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item">
+                            <div
+                                class="pi-pic set-bg"
+                                data-setbg="img/property/property-6.jpg"
+                            >
+                                <div class="label">For rent</div>
+                            </div>
+                            <div class="pi-text">
+                                <div class="pt-price">$ 289.0</div>
+                                <h5><a href="#">GoldCrest Residency</a></h5>
+                                <p>
+                                    <span class="icon_pin_alt"></span> No.7,
+                                    Sector- 11, Ghansoli, Mumbai, Navi Mumbai
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="col-lg-12 p-0">
+                        <div
+                            class="pagination-wrapper mt-3 pt-lg-3 text-center"
+                        >
+                            <ul class="page-pagination">
+                                <li>
+                                    <span
+                                        aria-current="page"
+                                        class="page-numbers current"
+                                        >1</span
+                                    >
+                                </li>
+                                <li>
+                                    <a class="page-numbers" href="#url">2</a>
+                                </li>
+                                <li>
+                                    <a class="page-numbers" href="#url">3</a>
+                                </li>
+                                <li>
+                                    <a class="page-numbers" href="#url">4</a>
+                                </li>
+                                <li>
+                                    <a class="next" href="#url"
+                                        >Next
+                                        <span class="fa fa-angle-right"></span
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Property Section End -->
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-about">
+                            <div class="fs-logo">
+                                <a class="navbar-brand" href="index.html">
+                                    <img
+                                        src="img/logo-white.png"
+                                        class="site-logo"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+
+                            <p>
+                                HMG Homes is a Luxury Real Estate Company. At
+                                HMG Homes, we focus on bringing our esteemed
+                                customers a combination of style and comfort.
+                            </p>
+
+                            <div class="fs-social">
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Links</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Create Property</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >My Properties</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Register</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Help</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Contact Support</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Knowledgebase</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Careers</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-widget">
+                            <h5>Contact us</h5>
+
+                            <ul>
+                                <li class="footer-item">
+                                    No 6a off road street, by oando filling
+                                    station
+                                </li>
+                                <li class="footer-item">
+                                    Phone no: +2348094562331
+                                </li>
+                                <li class="footer-item">
+                                    Email: hmghomes@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="copyright-text d-block"
+                    >&copy; HMG Homes, All rights reserved.</span
+                >
+            </div>
+        </footer>
+        <!-- // End Footer // -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/country.js"></script>
+        <script>
+            $(function () {
+                $("#country").change(function () {
+                    $("#location").selectpicker("refresh");
+                });
+
+                $(".filter_open_btn").on("click", function () {
+                    $(".sidebar").addClass("visible");
+                });
+
+                $("#filter_close_btn").on("click", function () {
+                    $(".sidebar").removeClass("visible");
+                });
+            });
+        </script>
+    </body>
+</html>
