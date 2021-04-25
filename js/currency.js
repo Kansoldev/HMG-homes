@@ -53,7 +53,7 @@ document.querySelector("#currencyForm").addEventListener("submit", (e) => {
                 } ${secondCurrencyValue}`;
             })
             .catch((err) => {
-                result.textContent = "An Error occured while converting";
+                result.textContent = "An error occured while converting";
             });
     }
 });

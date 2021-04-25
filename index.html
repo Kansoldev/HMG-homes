@@ -21,17 +21,11 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/themify-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
-
         <style>
-            .sizing {
+            .size {
                 width: 336px;
+                max-width: 100%;
                 height: 177px;
-            }
-
-            @media (max-width: 767px) {
-                .sizing {
-                    max-width: 100%;
-                }
             }
         </style>
     </head>
@@ -84,11 +78,17 @@
                             <ul
                                 class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block text-center"
                             >
+                                <li>
+                                    <a href="properties.html" class="nav-link"
+                                        >Properties</a
+                                    >
+                                </li>
+
                                 <li
                                     class="has-children"
                                     style="margin-right: 10px"
                                 >
-                                    <a href="#" class="nav-link active">Buy</a>
+                                    <a href="#" class="nav-link">Buy</a>
 
                                     <ul class="dropdown">
                                         <li>
@@ -106,21 +106,21 @@
                                         </li>
 
                                         <li>
-                                            <a href="#" class="nav-link"
+                                            <a
+                                                href="for_sale_owners.html"
+                                                class="nav-link"
                                                 >For sale by owners</a
                                             >
                                         </li>
 
                                         <li>
-                                            <a href="#" class="nav-link"
+                                            <a
+                                                href="recent_home_sales.html"
+                                                class="nav-link"
                                                 >Recent home sales</a
                                             >
                                         </li>
                                     </ul>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="nav-link">Properties</a>
                                 </li>
 
                                 <li
@@ -133,7 +133,10 @@
 
                                     <ul class="dropdown">
                                         <li>
-                                            <a href="#" class="nav-link">
+                                            <a
+                                                href="estimate.html"
+                                                class="nav-link"
+                                            >
                                                 See your homes estimate</a
                                             >
                                         </li>
@@ -720,7 +723,7 @@
             <div class="container">
                 <div class="row justify-content-around" style="gap: 2em">
                     <div class="col-md py-4 bg-white text-center shadow">
-                        <img src="img/Buy_a_home.png" class="sizing" alt="" />
+                        <img src="img/Buy_a_home.png" class="size" alt="" />
 
                         <div>
                             <h4 class="font-weight-bold mt-2">Buy a home</h4>
@@ -739,7 +742,7 @@
                     </div>
 
                     <div class="col-md py-4 bg-white text-center shadow">
-                        <img src="img/sell_a_home.png" class="sizing" alt="" />
+                        <img src="img/sell_a_home.png" class="size" alt="" />
 
                         <div>
                             <h4 class="font-weight-bold mt-2">Sell a home</h4>
@@ -751,14 +754,17 @@
                                 got you covered.
                             </p>
 
-                            <button class="btn btn-outline-primary">
+                            <button
+                                class="btn btn-outline-primary"
+                                onclick="window.location='sell.html'"
+                            >
                                 See your options
                             </button>
                         </div>
                     </div>
 
                     <div class="col-md py-4 bg-white text-center shadow">
-                        <img src="img/rent_a_home.png" class="sizing" alt="" />
+                        <img src="img/rent_a_home.png" class="size" alt="" />
 
                         <div>
                             <h4 class="font-weight-bold mt-2">Rent a home</h4>

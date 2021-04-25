@@ -1,26 +1,3 @@
-@media (min-width: 992px) {
-    .filter_search_opt {
-        display: none;
-    }
-}
-
-.filter_search_opt a {
-    background: #13506f;
-    width: 100%;
-    display: flex;
-    height: 54px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    border: 2px solid rgba(25, 206, 109, 0.2);
-}
-
-.filter_search_opt i {
-    margin-left: 10px;
-}
-
 .simple-sidebar {
     border-radius: 0.4rem;
     background: #fff;
@@ -45,58 +22,6 @@
     margin-bottom: 1rem;
 }
 
-.search-sidebar_header .ssh_heading {
-    margin: 0;
-    flex: 1;
-    font-size: 16px;
-}
-
-.simple-sidebar button.w3-bar-item.w3-button.w3-large {
-    background: #fff;
-    border: none !important;
-    cursor: pointer;
-    outline: 0 !important;
-    color: #465169;
-}
-
-.filter-search-box .form-group .form-control {
-    margin: 0 !important;
-    box-shadow: none !important;
-    background: rgba(174, 189, 219, 0.12);
-    border: 1px solid transparent;
-    color: #707e9c;
-    border-radius: 4px;
-}
-
-.input-with-icon .form-control,
-.input-with-icon .select2-container {
-    border: none;
-    border-radius: 5px;
-    padding-left: 45px;
-    height: 60px;
-    background: #fff;
-    overflow: hidden;
-    box-shadow: 0 0 6px 1px rgb(62 28 131 / 10%);
-    -webkit-box-shadow: 0 0 6px 1px rgb(62 28 131 / 10%);
-}
-
-.input-with-icon {
-    position: relative;
-    width: 100%;
-}
-
-.input-with-icon i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
-    font-size: 18px;
-    color: #a2a9bf;
-    font-style: normal;
-    cursor: normal;
-    pointer-events: none;
-}
-
 .single_search_boxed:first-child {
     border-top: none;
 }
@@ -106,94 +31,6 @@
     border-top: 1px solid #eef0f5;
     display: inline-block;
     width: 100%;
-}
-
-.widget-boxed-header {
-    padding: 0;
-    width: 100%;
-    position: relative;
-    display: block;
-}
-
-.widget-boxed-header h4 {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0;
-}
-
-.widget-boxed-header h4 a {
-    height: 100%;
-    display: block;
-    color: #2d3954 !important;
-    position: relative;
-    padding: 1rem 0;
-}
-
-.widget-boxed-header h4 a.collapsed:before {
-    content: "\e61a";
-    background: #f5f7fb;
-    color: #140c40;
-}
-
-.widget-boxed-header h4 a:before {
-    content: "\e622";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: 0;
-    top: 52%;
-    transform: translate(-10%, -52%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f4f5f7;
-    font-family: themify;
-    font-size: 10px;
-    color: #445977;
-}
-
-.widget-boxed-header .selected {
-    display: block;
-    line-height: 1.2;
-    font-size: 14px;
-    text-transform: capitalize;
-    font-weight: 400;
-    color: #72809d;
-    font-family: Muli, sans-serif;
-}
-
-.btn.btn-theme-light-2,
-.btn.btn-theme-light-2:focus,
-.btn.btn-theme-light-2:hover {
-    background: rgba(15, 202, 152, 0.2) !important;
-    border: 2px solid rgba(15, 202, 152, 0.3) !important;
-    padding: 16px 50px;
-    color: #0fca98 !important;
-}
-
-.item-shorting-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    width: 100%;
-}
-
-.item-shorting {
-    flex: 1;
-}
-
-.item-shorting-box-right {
-    display: flex;
-    align-items: center;
-}
-
-.shorting-by {
-    display: inline-flex;
-    width: 140px;
-    margin-right: 15px;
 }
 
 .property-listing {
@@ -246,10 +83,6 @@
     font-weight: 600;
 }
 
-.property-listing.property-2 .listing-name .prt-link-detail {
-    position: relative;
-}
-
 .listing-card-info-price {
     font-weight: 600;
     position: relative;
@@ -280,13 +113,6 @@
     justify-content: flex-start;
     margin-top: 20px;
 }
-
-/* .listing-card-info-icon {
-    width: auto;
-    flex: inherit;
-    display: inline-flex;
-    align-items: center;
-} */
 
 .listing-card-info-icon {
     display: inline-block;
@@ -350,10 +176,6 @@
     justify-content: center;
 }
 
-.listing-card-info-icon:last-child {
-    margin: 0;
-}
-
 @media (max-width: 1199px) {
     .property-listing.property-2 .listing-detail-wrapper {
         padding: 1rem 1rem;
@@ -364,15 +186,10 @@
     border-color: #13506f;
     background-color: #13506f;
     color: #fff;
-    /* margin-left: 100px; */
 }
 
 .pagination li:nth-child(2) .page-link {
     margin-left: 15px;
-}
-
-.page-link {
-    color: #13506f;
 }
 
 .page-item.active .page-link {

@@ -21,6 +21,19 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/themify-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
+
+        <style>
+            span.input-group-btn {
+                background-color: #fff;
+                width: 100%;
+            }
+
+            @media (min-width: 768px) {
+                span.input-group-btn {
+                    width: 50%;
+                }
+            }
+        </style>
     </head>
 
     <body>
@@ -63,7 +76,7 @@
                                     class="has-children"
                                     style="margin-right: 10px"
                                 >
-                                    <a href="#" class="nav-link active">Buy</a>
+                                    <a href="#" class="nav-link">Buy</a>
 
                                     <ul class="dropdown">
                                         <li>
@@ -102,7 +115,7 @@
                                     class="has-children"
                                     style="margin-right: 10px"
                                 >
-                                    <a href="sell.html" class="nav-link"
+                                    <a href="sell.html" class="nav-link active"
                                         >Sell</a
                                     >
 
@@ -257,58 +270,21 @@
             class="hero-area d-flex align-items-center justify-content-center text-center"
             style="background-image: url('img/banner-img.jpg')"
         >
-            <div class="hero-content">
+            <div class="container hero-content">
                 <h1 class="text-white hero-title mb-4 mb-md-0">
                     How much is my home worth?
                 </h1>
 
                 <span
-                    class="text-white my-3 f-300 d-none d-md-block"
+                    class="text-white my-3 f-300 d-none d-md-block w-75 mx-auto"
                     style="font-size: 1.3em; opacity: 0.95"
                 >
                     Enter your address to get your free estimate instantly, or
-                    request a no‑obligation market value offer from HMG.
+                    request a no‑obligation market value offer from HMG Homes.
                 </span>
 
-                <nav class="home-nav d-none d-md-block">
-                    <ul class="home-nav-list">
-                        <li class="home-nav-item">
-                            <a class="home-nav-link active" href="#">BUY</a>
-                        </li>
-
-                        <li class="home-nav-item">
-                            <a class="home-nav-link" href="rentals.html"
-                                >RENT/LEASE</a
-                            >
-                        </li>
-
-                        <li class="home-nav-item">
-                            <a class="home-nav-link" href="pre-approval.html"
-                                >PRE-APPROVAL</a
-                            >
-                        </li>
-
-                        <li class="home-nav-item">
-                            <a class="home-nav-link" href="just-sold.html"
-                                >JUST SOLD</a
-                            >
-                        </li>
-
-                        <li class="home-nav-item">
-                            <a class="home-nav-link" href="#">HOME VALUE</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <form
-                    id="propertyForm"
-                    class="property-form"
-                    action="search.html"
-                >
-                    <span
-                        class="input-group-btn my-5 my-md-0"
-                        style="width: 60%; height: 56px"
-                    >
+                <form class="property-form">
+                    <span class="input-group-btn my-4 my-md-0 mx-0 mx-md-4">
                         <input
                             type="text"
                             name="name"
@@ -327,13 +303,6 @@
                     </button>
                 </form>
             </div>
-        </section>
-        <!-- End Hero Area -->
-
-        <section class="faq my-5">
-            <h3 class="text-center font-weight-bold">
-                Frequently Asked Questions
-            </h3>
         </section>
 
         <!-- Footer -->

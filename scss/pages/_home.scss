@@ -1,29 +1,3 @@
-.section-title {
-    margin-bottom: 40px;
-    color: $primary-color;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    position: relative;
-    padding-left: 20px;
-
-    &::after {
-        content: "";
-        background-color: $primary-color;
-        position: absolute;
-        left: 0;
-        top: -5px;
-        width: 4px;
-        height: 40px;
-    }
-}
-
-.set-bg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 // TOP HERO SECTION
 .hero-area {
     @include background-image("../img/pexels-david-mcbee-1546166.jpg");
@@ -179,19 +153,19 @@ span.input-group-btn {
         ul {
             position: absolute;
             bottom: 15px;
-        }
 
-        ul li {
-            font-size: 15px;
-            color: #111;
-            font-weight: 600;
-            display: inline-block;
-            margin-right: 30px;
+            li {
+                font-size: 0.9rem;
+                color: #111;
+                font-weight: 600;
+                display: inline-block;
+                margin-right: 30px;
 
-            i {
-                font-size: 14px;
-                color: #777;
-                margin-right: 8px;
+                i {
+                    font-size: 14px;
+                    color: #777;
+                    margin-right: 8px;
+                }
             }
         }
     }
@@ -230,6 +204,12 @@ span.input-group-btn {
     }
 }
 // END LATEST PROPERTIES DISPLAY
+
+.size {
+    width: 336px;
+    max-width: 100%;
+    height: 177px;
+}
 
 // WHO WE ARE
 .who-section {
@@ -389,9 +369,13 @@ span.input-group-btn {
     }
 
     #result {
-        color: $primary-color;
-        font-size: 2.625rem;
+        color: red;
         font-weight: 700;
+        font-size: 1.15rem;
+
+        @media (min-width: 768px) {
+            font-size: 1.3rem;
+        }
     }
 
     .form-control:focus {
