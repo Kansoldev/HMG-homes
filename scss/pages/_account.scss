@@ -195,6 +195,7 @@ input.parsley-error {
         margin: 0 auto 1rem;
         border: 1px solid #ccc;
         height: 38px;
+        line-height: 35px;
         border-radius: 3px;
         max-width: 408px;
         overflow: hidden;
@@ -211,6 +212,7 @@ input.parsley-error {
             position: absolute;
             left: 10%;
             height: 18px;
+            bottom: 10px;
         }
     }
 

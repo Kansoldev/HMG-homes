@@ -3,8 +3,12 @@
     @include background-image("../img/pexels-david-mcbee-1546166.jpg");
     width: 100vw;
     max-width: 100%;
-    min-height: 750px;
+    min-height: 530px;
     position: relative;
+
+    @media (min-width: 768px) {
+        min-height: 600px;
+    }
 
     &::before {
         @include before;
@@ -213,9 +217,7 @@ span.input-group-btn {
 
 // WHO WE ARE
 .who-section {
-    @include background-image("../img/bg.jpg");
     background-color: $primary-color;
-    background-blend-mode: darken;
     padding: 60px 0;
 }
 
@@ -470,14 +472,17 @@ span.input-group-btn {
 .hero-img {
     @include position(absolute) {
         overflow: hidden;
+        height: 100%;
         background-color: #bbb;
         animation-duration: 0.5s;
         animation-fill-mode: both;
     }
 
-    img {
+    video {
+        height: inherit;
         width: 100%;
-        height: 100%;
+        background-color: #fff;
+        object-fit: cover;
     }
 }
 

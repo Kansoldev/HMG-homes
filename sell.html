@@ -59,7 +59,7 @@
 
             @media (min-width: 1200px) {
                 .sell-things div:first-child {
-                    flex-basis: 60%;
+                    flex-basis: 85%;
                 }
             }
 
@@ -68,10 +68,6 @@
                     flex: 1;
                 }
             }
-
-            /* .work-agent {
-                box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-            } */
 
             @media (min-width: 768px) {
                 .work-agent {
@@ -113,7 +109,7 @@
         </div>
 
         <header
-            class="site-navbar py-3 py-md-4 js-sticky-header bg-primary site-navbar-target"
+            class="site-navbar py-3 py-md-4 js-sticky-header site-navbar-target"
             role="banner"
         >
             <div class="container">
@@ -134,7 +130,14 @@
                             role="navigation"
                         >
                             <ul
-                                class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block text-center"
+                                class="
+                                    site-menu
+                                    main-menu
+                                    js-clone-nav
+                                    mx-auto
+                                    d-none d-lg-block
+                                    text-center
+                                "
                             >
                                 <li>
                                     <a href="#" class="nav-link">Properties</a>
@@ -265,18 +268,92 @@
                                     </ul>
                                 </li>
 
-                                <li>
-                                    <a
-                                        href="#testimonials-section"
-                                        class="nav-link"
-                                        >Luxury apartments</a
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="bookings.php" class="nav-link"
+                                        >Bookings</a
                                     >
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a
+                                                href="hotel.php"
+                                                class="nav-link"
+                                            >
+                                                Hotel</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a
+                                                href="apartment.php"
+                                                class="nav-link"
+                                            >
+                                                Apartment
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a
+                                                href="villa.php"
+                                                class="nav-link"
+                                            >
+                                                Villa
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a
+                                                href="beach-house.php"
+                                                class="nav-link"
+                                                >Beach House</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </li>
 
-                                <li>
-                                    <a href="myhome.html" class="nav-link"
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="myhome.php" class="nav-link"
                                         >My Home</a
                                     >
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Swimming Pool(HMG DDC)</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link">
+                                                Walk-in closet
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link">
+                                                Kitchen
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Automated Gate System(HMG
+                                                DDC)</a
+                                            >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >3D Visuals</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li
@@ -285,7 +362,12 @@
                                 >
                                     <a
                                         href="login.html"
-                                        class="btn btn-primary text-white w-100 my-3"
+                                        class="
+                                            btn btn-primary
+                                            text-white
+                                            w-100
+                                            my-3
+                                        "
                                     >
                                         Login
                                     </a>
@@ -328,75 +410,70 @@
             </div>
         </header>
 
-        <section class="confidence">
-            <div class="container-fluid">
-                <h2 class="text-center sell-title text-primary">
-                    Sell with confidence
-                </h2>
+        <section class="hero-section position-relative">
+            <div class="set-bg home" data-setbg="img/sell-bg.jpeg"></div>
+        </section>
 
-                <p
-                    class="text-center mb-4 mt-3 font-300"
-                    style="font-size: 20px"
-                >
-                    HMG Homes is making it easier and saver to sell your home
+        <div class="banner-info">
+            <div class="container">
+                <h1 class="text-white">
+                    Sell your home faster on our platform
+                </h1>
+
+                <p class="text-white">
+                    With our sophisticated marketing tools and agents, selling
+                    your home just got easier and faster. List your property
+                    below.
                 </p>
 
-                <div class="sell-things d-flex flex-wrap">
+                <form action="sell-1.html" class="address-form form-inline">
+                    <input
+                        type="text"
+                        class="form-control w-75 mb-3 mb-md-0 p-4 rounded-0"
+                        placeholder="Enter your address"
+                    />
+
+                    <button class="btn btn-primary p-3 px-5" type="submit">
+                        SEARCH
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container position-relative">
+            <div class="sell-things d-flex flex-wrap my-5">
+                <div class="bg-white p-5 w-100 shadow">
                     <div
-                        class="bg-white d-flex flex-wrap work-agent shadow mb-5 mb-md-0"
+                        class="
+                            d-flex
+                            flex-column
+                            justify-content-center
+                            h-100
+                            align-items-start
+                        "
                     >
-                        <img src="img/download.png" alt="" />
+                        <h2 class="mb-0 font-weight-bold text-primary">
+                            Sell it yourself
+                        </h2>
 
-                        <div class="align-self-center">
-                            <h2 class="mb-0 font-weight-bold text-primary">
-                                Work with an agent
-                            </h2>
+                        <p class="my-3 font-300">
+                            Reach the largest audience of shoppers with a free
+                            HMG listing. Start by learning
 
-                            <p class="my-3 font-300">
-                                HMG Agents are among the best in the business.
-                                Learn how to
-                                <a
-                                    href="#"
-                                    class="d-inline-block text-info text-underline"
-                                    >Pick the right one for you.</a
-                                >
-                            </p>
-
-                            <button
-                                class="btn btn-outline-primary btn-lg mb-4 mb-md-0"
+                            <a
+                                href="#"
+                                class="d-inline-block text-underline text-info"
+                                >How to sell for sale by owner.</a
                             >
-                                Search now
-                            </button>
-                        </div>
-                    </div>
+                        </p>
 
-                    <div class="bg-white p-4 w-100 shadow">
-                        <div
-                            class="d-flex flex-column justify-content-center h-100 align-items-start"
-                        >
-                            <h2 class="mb-0 font-weight-bold text-primary">
-                                Sell it yourself
-                            </h2>
-
-                            <p class="my-3 font-300">
-                                Reach the largest audience of shoppers with a
-                                free HMG listing. Start by learning
-
-                                <a
-                                    href="#"
-                                    class="d-inline-block text-underline text-info"
-                                    >How to sell for sale by owner.</a
-                                >
-                            </p>
-
-                            <button class="btn btn-outline-primary btn-lg">
-                                Create a listing
-                            </button>
-                        </div>
+                        <button class="btn btn-outline-primary btn-lg">
+                            Create a listing
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <footer class="footer-section">
             <div class="container">

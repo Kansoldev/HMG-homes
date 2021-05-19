@@ -10,6 +10,34 @@
         <link rel="stylesheet" href="css/elegant-icons.css" />
         <link rel="stylesheet" href="css/owl.carousel.min.css" />
         <link rel="stylesheet" href="css/main.css" />
+        <style>
+            .pd-social {
+                text-align: right;
+                margin-bottom: 30px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                .pd-social {
+                    text-align: left;
+                    padding-top: 0;
+                }
+            }
+
+            .pd-social a {
+                display: inline-block;
+                font-size: 14px;
+                color: #fff;
+                height: 36px;
+                width: 36px;
+                background-color: #13506f;
+                line-height: 36px;
+                text-align: center;
+                border-radius: 50%;
+                margin-right: 15px;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+        </style>
     </head>
 
     <body>
@@ -244,14 +272,23 @@
         <!-- Property Details Section Begin -->
         <section class="property-details-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 my-4">
-                        <img src="img/HMG img3.jpg" class="mb-3 img-fluid" />
-                    </div>
-
+                <div class="row" style="margin-top: 150px">
                     <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-12">
+                        <div class="owl-carousel img-slider">
+                            <img
+                                src="img/HMG img3.jpg"
+                                class="mb-3 img-fluid"
+                            /><img
+                                src="img/HMG-img2.jpg"
+                                class="mb-3 img-fluid"
+                            /><img
+                                src="img/HMG-woman-min.jpg"
+                                class="mb-3 img-fluid"
+                            />
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
                                 <div class="pd-title">
                                     <label>For sale</label>
 
@@ -263,6 +300,25 @@
                                         <span class="icon_pin_alt"></span> 3
                                         Middle Winchendon Rd, Rindge, NH 03463
                                     </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 text-right align-self-start">
+                                <div class="pd-social">
+                                    <h4 class="mb-3">Share This Property</h4>
+
+                                    <a href="#"
+                                        ><i class="fa fa-facebook"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="fa fa-linkedin"></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i class="fa fa-instagram"></i
+                                    ></a>
                                 </div>
                             </div>
                         </div>
@@ -471,7 +527,7 @@
                             <div class="map">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735515.5813275519!2d-80.41163541934742!3d43.93644386501528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882a55bbf3de23d7%3A0x3ada5af229b47375!2sMono%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1583262687289!5m2!1sen!2sbd"
-                                    height="350"
+                                    height="450"
                                     style="border: 0"
                                     allowfullscreen=""
                                 ></iframe>
@@ -479,14 +535,14 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mt-2 mt-100">
                         <div class="property-sidebar">
                             <div class="single-sidebar slider-op">
                                 <div class="section-title sidebar-title">
-                                    <h5>Similar Places</h5>
+                                    <h5>Similar Properties</h5>
                                 </div>
 
-                                <div class="sf-slider owl-carousel">
+                                <div class="sp-slider owl-carousel">
                                     <div
                                         class="sf-item set-bg p-4"
                                         data-setbg="img/hero/hero-1.jpg"
@@ -517,18 +573,6 @@
                                     >
                                         <div class="sf-text">
                                             <h5>Bangor</h5>
-                                            <a href="#" class="link"
-                                                >View &raquo;</a
-                                            >
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="sf-item set-bg"
-                                        data-setbg="img/saved/fp2.jpg"
-                                    >
-                                        <div class="sf-text">
-                                            <h5>Boyne Valley</h5>
                                             <a href="#" class="link"
                                                 >View &raquo;</a
                                             >
@@ -757,7 +801,21 @@
         <script src="js/main.js"></script>
         <script>
             $(function () {
-                $(".sf-slider").owlCarousel({
+                $(".img-slider").owlCarousel({
+                    loop: true,
+                    margin: 0,
+                    items: 1,
+                    nav: true,
+                    navText: [
+                        '<i class="fa fa-long-arrow-left"></i>',
+                        '<i class="fa fa-long-arrow-right"></i>',
+                    ],
+                    dots: true,
+                    smartSpeed: 1200,
+                    autoplay: true,
+                });
+
+                $(".sp-slider").owlCarousel({
                     loop: true,
                     margin: 0,
                     items: 1,
