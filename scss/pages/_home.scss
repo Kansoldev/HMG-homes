@@ -105,13 +105,21 @@ span.input-group-btn {
 
             .label {
                 display: inline-block;
-                @include position($pos: absolute, $top: 20px, $left: 20px);
                 font-size: 0.75rem;
                 font-weight: 600;
                 text-transform: uppercase;
                 padding: 3px 10px 2px;
-                background-color: #0166d0;
                 color: #fff;
+
+                &.status {
+                    background-color: #0166d0;
+                    @include position($pos: absolute, $top: 20px, $left: 20px);
+                }
+
+                &.length {
+                    background-color: #e96a56;
+                    @include position($pos: absolute, $top: 20px, $right: 20px);
+                }
             }
         }
     }

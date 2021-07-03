@@ -37,6 +37,29 @@
                 -webkit-transition: all 0.3s;
                 transition: all 0.3s;
             }
+
+            .save-icon {
+                background: #fff;
+                position: absolute;
+                border-radius: 50%;
+                box-shadow: 1px 1px 5px 0px rgba(51, 51, 51, 0.5);
+                border: none;
+                top: -70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                right: 50px;
+                font-size: 29px;
+                cursor: pointer;
+                z-index: 9;
+                width: 60px;
+                height: 60px;
+            }
+
+            .save-icon:hover {
+                box-shadow: 1px 1px 8px 0px rgb(51 51 51 / 80%);
+                transition: box-shadow 4ms ease-in-out;
+            }
         </style>
     </head>
 
@@ -53,7 +76,13 @@
 
         <!-- Header Area -->
         <header
-            class="site-navbar py-3 py-md-4 js-sticky-header bg-primary site-navbar-target"
+            class="
+                site-navbar
+                py-3 py-md-4
+                js-sticky-header
+                bg-primary
+                site-navbar-target
+            "
             role="banner"
         >
             <div class="container">
@@ -74,7 +103,14 @@
                             role="navigation"
                         >
                             <ul
-                                class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block text-center"
+                                class="
+                                    site-menu
+                                    main-menu
+                                    js-clone-nav
+                                    mx-auto
+                                    d-none d-lg-block
+                                    text-center
+                                "
                             >
                                 <li
                                     class="has-children"
@@ -225,7 +261,12 @@
                                 >
                                     <a
                                         href="login.html"
-                                        class="btn btn-primary text-white w-100 my-3"
+                                        class="
+                                            btn btn-primary
+                                            text-white
+                                            w-100
+                                            my-3
+                                        "
                                     >
                                         Login
                                     </a>
@@ -304,7 +345,18 @@
                             </div>
 
                             <div class="col-md-6 text-right align-self-start">
-                                <div class="pd-social">
+                                <span
+                                    class="
+                                        jsx-1837948588
+                                        icon-save-lg
+                                        qv-favorite
+                                        save-icon
+                                    "
+                                >
+                                    <i class="fa fa-heart-o"></i>
+                                </span>
+
+                                <div class="pd-social mt-3">
                                     <h4 class="mb-3">Share This Property</h4>
 
                                     <a href="#"
@@ -325,7 +377,11 @@
 
                         <div class="pd-board">
                             <ul
-                                class="nav nav-tabs justify-content-between justify-content-md-start"
+                                class="
+                                    nav nav-tabs
+                                    justify-content-between
+                                    justify-content-md-start
+                                "
                                 role="tablist"
                             >
                                 <li class="nav-item">

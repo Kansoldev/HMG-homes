@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HMG Homes</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/themify-icons.css" />
+        <link rel="stylesheet" href="css/elegant-icons.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <style>
+            .pd-social-container {
+                background-color: #fff;
+                box-shadow: 6px 6px 12px rgba(147, 161, 173, 0.2);
+                padding: 1.6rem;
+                width: 350px;
+                margin-top: 15px;
+            }
+
+            .pd-social a {
+                display: inline-block;
+                font-size: 0.875rem;
+                color: #13506f;
+                height: 36px;
+                width: 36px;
+                line-height: 31px;
+                text-align: center;
+                border-radius: 50%;
+                margin-right: 15px;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+                border: 3px solid #13506f;
+            }
+
+            .img-slider li:first-child > .img-slide {
+                height: 400px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .img-slider .img-slide {
+                height: 250px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .title-2 {
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 600;
+                border-left: 2px solid #13506f;
+                padding-left: 10px;
+                color: #13506f;
+            }
+
+            .pd-container {
+                box-shadow: 6px 6px 12px rgba(147, 161, 173, 0.2);
+                margin-bottom: 60px;
+                background-color: #fff;
+                /* background-color: #f7fdff; */
+            }
+
+            .pd-container ul {
+                padding: 20px;
+            }
+
+            .pd-container ul:not(:last-child) {
+                border-right: 1px solid #13506f;
+            }
+
+            .pd-container ul li {
+                margin-top: 7px;
+                color: #13506f;
+            }
+
+            .amenities li {
+                margin-top: 15px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .ltn__page-details-inner label {
+                font-size: 14px;
+            }
+
+            .checkbox-item {
+                display: inline-block;
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 0;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .checkbox-item .checkmark {
+                position: absolute;
+                top: 3px;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background-color: #13506f;
+            }
+
+            .checkbox-item input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+
+            .checkbox-item .checkmark::after {
+                position: absolute;
+                content: "";
+                display: none;
+                left: 6px;
+                top: 2px;
+                width: 5px;
+                height: 10px;
+                border: solid #fff;
+                border-width: 0 1px 1px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .checkbox-item input:checked ~ .checkmark::after {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header
+            class="
+                site-navbar
+                py-3 py-md-4
+                bg-primary
+                js-sticky-header
+                site-navbar-target
+            "
+            role="banner"
+        >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-xl-1">
+                        <a href="index.html" class="mb-0">
+                            <img
+                                src="img/logo-white.png"
+                                class="img-fluid site-logo"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-9 d-none d-xl-block">
+                        <nav
+                            class="site-navigation position-relative text-right"
+                            role="navigation"
+                        >
+                            <ul
+                                class="
+                                    site-menu
+                                    main-menu
+                                    js-clone-nav
+                                    mx-auto
+                                    d-none d-lg-block
+                                    text-center
+                                "
+                            >
+                                <li>
+                                    <a href="properties.html" class="nav-link"
+                                        >Properties</a
+                                    >
+                                </li>
+
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="#" class="nav-link">Buy</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a
+                                                href="homesforsale.html"
+                                                class="nav-link"
+                                                >Homes for sale</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="sell.html" class="nav-link"
+                                        >Sell</a
+                                    >
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a
+                                                href="estimate.html"
+                                                class="nav-link"
+                                            >
+                                                Sell your property</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li
+                                    class="has-children"
+                                    style="margin-right: 10px"
+                                >
+                                    <a href="#" class="nav-link">Rent/lease</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#" class="nav-link"
+                                                >Houses for rent</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="#testimonials-section"
+                                        class="nav-link"
+                                        >Luxury apartments</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="myhome.html" class="nav-link"
+                                        >My Home</a
+                                    >
+                                </li>
+
+                                <li
+                                    class="d-xl-none"
+                                    style="padding-left: 20px"
+                                >
+                                    <a
+                                        href="login.html"
+                                        class="
+                                            btn btn-primary
+                                            text-white
+                                            w-100
+                                            my-3
+                                        "
+                                    >
+                                        Login
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="d-xl-none"
+                                    style="padding-left: 20px"
+                                >
+                                    <a
+                                        href="signup.html"
+                                        class="btn btn-outline-primary w-100"
+                                    >
+                                        Signup
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col-2 mt-3 mt-md-0 d-none d-lg-flex">
+                        <a href="login.html" class="btn" id="login"> Login </a>
+
+                        <a href="signup.html" class="btn" id="signup">
+                            Signup
+                        </a>
+                    </div>
+
+                    <div
+                        class="col-6 d-inline-block d-xl-none ml-md-0 py-3"
+                        style="position: relative; top: 3px"
+                    >
+                        <a
+                            href="#"
+                            class="site-menu-toggle js-menu-toggle float-right"
+                            ><span class="ti-menu h3"></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container" style="margin-top: 140px">
+            <div class="details-wrapper" style="height: 800px">
+                <div class="property-container d-flex" style="height: 80%">
+                    <div
+                        style="flex: 1.5; height: 100%; overflow: hidden scroll"
+                    >
+                        <ul
+                            class="img-slider"
+                            style="display: grid; grid-gap: 1.3em"
+                        >
+                            <li style="grid-column: span 2">
+                                <img
+                                    src="img/prop/img3.jpeg"
+                                    class="img-fluid img-slide"
+                                />
+                            </li>
+
+                            <li>
+                                <img
+                                    src="img/prop/img2.jpeg"
+                                    class="img-fluid img-slide"
+                                />
+                            </li>
+
+                            <li>
+                                <img
+                                    src="img/prop/img1.jpeg"
+                                    class="img-fluid img-slide"
+                                />
+                            </li>
+
+                            <li>
+                                <img
+                                    src="img/prop/img4.jpeg"
+                                    class="img-fluid img-slide"
+                                />
+                            </li>
+
+                            <li>
+                                <img
+                                    src="img/prop/img5.jpeg"
+                                    class="img-fluid img-slide"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="px-4 py-5 bg-white"
+                        style="flex: 1; overflow: hidden scroll"
+                    >
+                        <h3 class="text-uppercase text-primary">
+                            Melville in high way
+                        </h3>
+
+                        <ul
+                            class="
+                                d-flex
+                                align-items-baseline
+                                text-primary
+                                mt-2
+                            "
+                        >
+                            <li
+                                class="mr-4 text-primary font-weight-bold"
+                                style="font-size: 35px"
+                            >
+                                ₦300,000/mo
+                            </li>
+                            <li>4 bd&nbsp;|&nbsp;</li>
+                            <li>4 ba&nbsp;|&nbsp;</li>
+                            <li>3305 sqft</li>
+                        </ul>
+
+                        <p>
+                            <i class="fa fa-map-marker"></i> 3 Middle Winchendon
+                            Rd, Rindge, NH 03463
+                        </p>
+
+                        <label
+                            style="
+                                background-color: #103230;
+                                font-size: 0.75rem;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                padding: 3px 10px 2px;
+                                display: inline-block;
+                                color: #fff;
+                                margin-right: 10px;
+                            "
+                        >
+                            for rent
+                        </label>
+
+                        <div class="mb-4 pd-social-container">
+                            <div class="pd-social">
+                                <h4 class="mb-3 text-primary">
+                                    Share This Property
+                                </h4>
+
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+
+                            <div class="hint mt-3">
+                                <span class="tooltiptext" id="myTooltip"></span>
+
+                                <button
+                                    onclick="myFunction()"
+                                    id="share"
+                                    class="
+                                        text-primary text-hover-underline
+                                        bg-transparent
+                                        border-0
+                                    "
+                                >
+                                    Get Shareable Link
+                                </button>
+                            </div>
+
+                            <input
+                                type="text"
+                                class="d-block position-absolute"
+                                id="copyText"
+                                style="bottom: -20px; opacity: 0"
+                            />
+                        </div>
+
+                        <h4 class="title-2 mt-5 text-uppercase">Description</h4>
+
+                        <p class="font-weight-lighter">
+                            Massa tempor nec feugiat nisl pretium. Egestas
+                            fringilla phasellus faucibus scelerisque eleifend
+                            donec Porta nibh venenatis cras sed felis eget velit
+                            aliquet. Neque volutpat ac tincidunt vitae semper
+                            quis lectus. Turpis in eu mi bibendum neque egestas
+                            congue quisque. Sed elementum tempus egestas sed sed
+                            risus pretium quam. Dignissim sodales ut eu sem.
+                            Nibh mauris cursus mattis molestee iaculis at erat
+                            pellentesque. Id interdum velit laoreet id donec
+                            ultrices tincidunt.
+                        </p>
+
+                        <h4 class="title-2 mt-5 text-uppercase">
+                            Property Details
+                        </h4>
+
+                        <div class="pd-container d-flex mt-3">
+                            <ul style="flex: 1">
+                                <li>
+                                    <label>Property ID:</label>
+                                    <span>1</span>
+                                </li>
+                                <li>
+                                    <label>Home Area: </label>
+                                    <span>120 sqft</span>
+                                </li>
+                                <li><label>Rooms:</label> <span>7</span></li>
+                                <li><label>Baths:</label> <span>2</span></li>
+                                <li><label>Beds:</label> <span>7</span></li>
+                            </ul>
+
+                            <ul style="flex: 1">
+                                <li>
+                                    <label>Country: </label>
+                                    <span>Nigeria</span>
+                                </li>
+                                <li>
+                                    <label>State:</label>
+                                    <span>Lagos</span>
+                                </li>
+
+                                <li>
+                                    <label>Year built:</label> <span>1992</span>
+                                </li>
+                                <li><label>Price:</label> <span>2</span></li>
+                                <li>
+                                    <label>Property Status:</label>
+                                    <span>For Sale</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4 class="title-2 mt-5 text-uppercase">Location</h4>
+
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps?q=lekki phase 1, lagos, nigeria&output=embed"
+                                height="400"
+                                width="100%"
+                                style="border: 0"
+                                allowfullscreen=""
+                            ></iframe>
+                        </div>
+
+                        <h4 class="title-2 mt-5 text-uppercase">Amenities</h4>
+
+                        <ul class="amenities">
+                            <li>
+                                <label class="checkbox-item"
+                                    >Air Conditioning
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-item"
+                                    >Gym
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-item"
+                                    >Microwave
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-item"
+                                    >Swimming Pool
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-item"
+                                    >WiFi
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-about">
+                            <div class="fs-logo">
+                                <a class="navbar-brand" href="index.html">
+                                    <img
+                                        src="img/logo-white.png"
+                                        class="site-logo"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+
+                            <p>
+                                HMG Homes is a Luxury Real Estate Company. At
+                                HMG Homes, we focus on bringing our esteemed
+                                customers a combination of style and comfort.
+                            </p>
+
+                            <div class="fs-social">
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+
+                                <a href="#" class="footer-link">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Links</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link">Contact</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Create Property</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >My Properties</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Register</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="fs-widget">
+                            <h5>Help</h5>
+
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Contact Support</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link"
+                                        >Knowledgebase</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">Careers</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer-link">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="fs-widget">
+                            <h5>Contact us</h5>
+
+                            <ul>
+                                <li class="footer-item">
+                                    No 6a off road street, by oando filling
+                                    station
+                                </li>
+                                <li class="footer-item">
+                                    Phone no: +2348094562331
+                                </li>
+                                <li class="footer-item">
+                                    Email: hmghomes@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="copyright-text"
+                    >&copy; HMG Homes, All rights reserved.</span
+                >
+            </div>
+        </footer>
+        <!-- // End Footer // -->
+    </body>
+</html>

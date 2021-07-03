@@ -22,10 +22,53 @@
         <link rel="stylesheet" href="css/themify-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
         <style>
-            .size {
-                width: 336px;
-                max-width: 100%;
-                height: 177px;
+            .hover-up {
+                top: 0;
+                position: relative;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .hover-up:hover {
+                box-shadow: 0 20px 40px rgb(61 65 84 / 15%);
+                top: -2px;
+            }
+
+            .box-shadow {
+                box-shadow: 0 1px 6px rgb(61 65 84 / 15%);
+            }
+
+            .feature {
+                z-index: 1;
+                padding: 48px 40px;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 20px;
+                background-color: #fff;
+            }
+
+            .feature__title {
+                font-size: 18px;
+                margin-bottom: 18px;
+            }
+
+            .feature__text {
+                margin-bottom: 0;
+            }
+
+            .hover-line::before {
+                content: "";
+                display: block;
+                height: 5px;
+                width: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: #4c86e7;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .hover-line:hover::before {
+                width: 100%;
             }
         </style>
     </head>
@@ -410,6 +453,15 @@
                     </div>
                 </div>
 
+                <div class="container">
+                    <select name="" id="countryCurrency">
+                        <option value="">Select Country</option>
+                        <option value="ngn">NGN</option>
+                        <option value="aud">AUD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                </div>
+
                 <div class="row property-filter">
                     <div class="col-lg-4 col-md-6">
                         <div class="property-item">
@@ -418,7 +470,9 @@
                                     class="pi-pic set-bg"
                                     data-setbg="img/property/property-1.jpg"
                                 >
-                                    <span class="label">For Sale</span>
+                                    <span class="label status">For Sale</span>
+
+                                    <span class="label length">2 days ago</span>
                                 </div>
                             </a>
 
@@ -429,7 +483,15 @@
                                     <div class="tip-content">Save</div>
                                 </a>
 
-                                <span class="pt-price">$250,000</span>
+                                <!-- <span class="pt-price">$250,000</span> -->
+
+                                <!-- <div class="currency" data-currencyName="usd">
+                                    15<span>USD</span>
+                                </div> -->
+
+                                <div class="pt-price" data-currencyName="usd">
+                                    250000&nbsp;<span>USD</span>
+                                </div>
 
                                 <h5>
                                     <a href="#">Home in Merrick Way</a>
@@ -460,7 +522,13 @@
                                     class="pi-pic set-bg"
                                     data-setbg="img/property/property-2.jpg"
                                 >
-                                    <span class="label c-red">Sold Out</span>
+                                    <span
+                                        class="label status"
+                                        style="background-color: red"
+                                        >Sold Out</span
+                                    >
+
+                                    <span class="label length">2 days ago</span>
                                 </div>
                             </a>
 
@@ -471,7 +539,13 @@
                                     <div class="tip-content">Save</div>
                                 </a>
 
-                                <span class="pt-price">$1,000,000</span>
+                                <!-- <span class="pt-price">
+                                    <span class="currency-symbol">$</span
+                                    >1,000,000</span
+                                > -->
+                                <div class="pt-price" data-currencyName="usd">
+                                    50000&nbsp;<span>USD</span>
+                                </div>
 
                                 <h5>
                                     <a href="#">Unimont Aurum</a>
@@ -513,7 +587,11 @@
                                     <div class="tip-content">Save</div>
                                 </a>
 
-                                <span class="pt-price">$450,000</span>
+                                <!-- <span class="pt-price">$450,000</span> -->
+
+                                <div class="pt-price" data-currencyName="usd">
+                                    100000&nbsp;<span>USD</span>
+                                </div>
 
                                 <h5>
                                     <a href="#">Vrindavan Flora</a>
@@ -522,48 +600,6 @@
                                 <p>
                                     <span class="icon_pin_alt"></span> No. 15,
                                     16, 17-1A And 17-2, Rasayani, Rasayani
-                                </p>
-
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-object-group"></i> 2,
-                                        283
-                                    </li>
-                                    <li><i class="fa fa-bathtub"></i>03</li>
-                                    <li><i class="fa fa-bed"></i>05</li>
-                                    <li><i class="fa fa-automobile"></i>01</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="property-item">
-                            <a href="property-details.html">
-                                <div
-                                    class="pi-pic set-bg"
-                                    data-setbg="img/property/property-4.jpg"
-                                >
-                                    <span class="label">For Sale</span>
-                                </div>
-                            </a>
-
-                            <div class="pi-text">
-                                <a href="javascript:void(0)" class="heart-icon">
-                                    <span class="fa fa-heart-o"></span>
-
-                                    <div class="tip-content">Save</div>
-                                </a>
-
-                                <span class="pt-price">$1,000,000</span>
-
-                                <h5>
-                                    <a href="#">Shramik Vaibhav</a>
-                                </h5>
-
-                                <p>
-                                    <span class="icon_pin_alt"></span> 12 Pt at
-                                    Shedung,nvel, Raigarh, Navi Mumbai
                                 </p>
 
                                 <ul>
@@ -592,418 +628,6 @@
             </div>
         </section>
         <!-- End Featured Properties -->
-
-        <!-- Who We Are -->
-        <section class="who-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="who-text">
-                            <h4 class="section-title text-white">Who we are</h4>
-
-                            <p>
-                                HMG Homes is a Luxury Real Estate Company. At
-                                HMG Homes, we focus on bringing<br
-                                    class="d-none d-md-block"
-                                />
-                                our esteemed customers a combination of style
-                                and comfort.
-                            </p>
-                        </div>
-
-                        <div class="who-features">
-                            <div class="who-item">
-                                <div class="who-pic">
-                                    <svg
-                                        class="who-icon"
-                                        viewBox="0 0 463.937 463.937"
-                                    >
-                                        <g>
-                                            <path
-                                                d="M460.414,216.518l-85.6-73.1c0.1-0.5,0.2-1,0.3-1.6v-95.6c-0.1-5.7-4.6-10.3-10.3-10.5h-47.8c-5.5,0-10,4.9-10,10.5v39.6
-                                                    l-68.5-58.4c-3.7-3.2-9.2-3.2-13,0l-221.9,189c-4.3,3.5-4.8,9.8-1.3,14.1s9.8,4.8,14.1,1.3c0.1-0.1,0.1-0.1,0.2-0.2l215.4-183.4
-                                                    l77.1,65.7l46.1,39.2l92.3,78.6c4.2,3.6,10.5,3.1,14.1-1.1C465.114,226.418,464.614,220.118,460.414,216.518z M355.014,126.518
-                                                    l-28-23.6v-47.1h28V126.518z"
-                                            />
-                                        </g>
-
-                                        <g>
-                                            <path
-                                                d="M416.314,236.718l-28.1-24l-149.7-127.9c-3.7-3.2-9.2-3.2-13,0l-149.7,127.9l-28.1,24c-4.2,3.6-4.7,9.9-1.1,14.1
-                                                    c3.5,4.2,9.7,4.7,13.8,1.2l0.1-0.1l12.5-10.8v187.5c0.1,5.6,4.7,10.2,10.3,10.3h297.3c5.6-0.1,10.2-4.6,10.3-10.3v-187.5
-                                                    l12.5,10.8c1.8,1.5,4,2.4,6.4,2.4c2.9,0,5.7-1.3,7.6-3.5C421.114,246.518,420.514,240.218,416.314,236.718z M272.014,418.818h-80
-                                                    v-108h80V418.818z M292.014,418.818v-117.7c0-5.5-4.1-10.3-9.6-10.3h-100.8c-5.5,0-9.6,4.8-9.6,10.3v117.7h-79v-194.8l139-118.4
-                                                    l139,118.4v194.8H292.014z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
-
-                                <div class="who-text">
-                                    <h5>Find your future home</h5>
-                                    <p>
-                                        We help you find a new home by offering
-                                        a smart real estate.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="who-item">
-                                <div class="who-pic">
-                                    <svg class="who-icon" viewBox="0 0 512 512">
-                                        <g>
-                                            <path
-                                                d="M506.552,317.933c-9.739-14.312-29.351-18.1-43.707-8.452l-65.34,43.728l-0.19-136.11l22.7,21.265
-                                                    c4.827,4.521,11.121,7.009,17.729,7.009c0.012,0,0.026,0,0.039,0c7.134-0.01,14.022-3,18.898-8.205
-                                                    c4.737-5.057,7.222-11.655,6.996-18.581c-0.226-6.926-3.136-13.349-8.193-18.086l-43.035-40.314
-                                                    c-2.946-2.76-7.571-2.609-10.33,0.337c-2.759,2.946-2.608,7.57,0.337,10.33l43.035,40.314c2.208,2.068,3.478,4.872,3.577,7.895
-                                                    c0.098,3.023-0.986,5.904-3.055,8.111c-2.16,2.306-5.09,3.578-8.252,3.582c-0.006,0-0.011,0-0.017,0
-                                                    c-2.883,0-5.63-1.086-7.737-3.06c-0.001-0.001-0.001-0.001-0.001-0.001L259.124,67.616c-2.816-2.637-7.198-2.633-10.007,0.014
-                                                    L78.679,228.188c-2.201,2.074-5.079,3.16-8.103,3.076c-3.024-0.09-5.831-1.353-7.905-3.556c-2.074-2.201-3.167-5.079-3.076-8.102
-                                                    c0.09-3.024,1.353-5.831,3.554-7.905L246.326,39.143c4.342-4.091,11.154-4.101,15.507-0.021L369,139.514
-                                                    c2.945,2.759,7.57,2.609,10.33-0.337c2.759-2.946,2.608-7.57-0.337-10.33L271.827,28.455c-9.973-9.344-25.576-9.323-35.523,0.049
-                                                    l-58.639,55.24l-0.016-9.853c-0.004-3.106-1.218-6.024-3.417-8.216c-2.195-2.189-5.109-3.394-8.209-3.394
-                                                    c-0.006,0-0.011,0-0.017,0l-41.947,0.059c-3.106,0.004-6.023,1.218-8.216,3.417c-2.192,2.199-3.398,5.12-3.393,8.227l0.116,71.087
-                                                    l-59.439,55.993c-5.044,4.751-7.935,11.182-8.142,18.108c-0.207,6.926,2.296,13.518,7.047,18.56
-                                                    c4.75,5.044,11.181,7.936,18.108,8.143c0.265,0.008,0.53,0.012,0.795,0.012c6.635,0,12.918-2.49,17.767-7.06l22.649-21.336
-                                                    l0.09,64.291c-7.328-1.067-14.742-1.627-22.19-1.627H76.746v-4.382c0-14.711-11.969-26.68-26.68-26.68H26.68
-                                                    C11.969,249.092,0,261.06,0,275.772V390.29c0,4.036,3.272,7.308,7.308,7.308s7.308-3.272,7.308-7.308V275.772
-                                                    c0-6.652,5.412-12.064,12.064-12.064h23.385c6.652,0,12.064,5.412,12.064,12.064v11.69v149.796v11.575
-                                                    c0,6.652-5.412,12.064-12.064,12.064H26.68c-6.652,0-12.064-5.412-12.064-12.064v-12.788c0-4.036-3.272-7.308-7.308-7.308
-                                                    S0,432.009,0,436.045v12.788c0,14.711,11.969,26.68,26.68,26.68h23.385c14.711,0,26.68-11.968,26.68-26.68v-0.993l107.024,40.528
-                                                    c0.198,0.075,0.399,0.141,0.603,0.198c4.653,1.314,9.304,1.973,13.896,1.973c2.484,0,4.951-0.193,7.393-0.579l157.281-22.672
-                                                    c0.037-0.005,0.073-0.011,0.11-0.017c13.372-2.135,25.987-7.788,36.48-16.346c0.091-0.074,0.181-0.151,0.268-0.23l101.611-91.388
-                                                    C513.244,348.802,515.453,331.015,506.552,317.933z M163.037,76.902l0.034,20.59l-35.912,33.83l-0.089-54.371L163.037,76.902z
-                                                    M254.141,82.976l128.538,120.412l0.223,159.593l-20.691,13.848L340.3,375.6l-0.579-5.82
-                                                    c-2.039-20.498-17.171-36.987-37.18-40.922l-0.132-94.945c-0.01-7.286-5.942-13.207-13.227-13.207c-0.006,0-0.011,0-0.018,0
-                                                    l-69.654,0.098c-3.533,0.005-6.853,1.385-9.347,3.887c-2.495,2.501-3.866,5.825-3.861,9.357l0.116,82.781
-                                                    c-13.797-3.154-26.971-8.363-39.288-15.568c-1.537-0.899-3.089-1.767-4.654-2.611c-0.61-0.329-1.23-0.638-1.845-0.959
-                                                    c-0.952-0.497-1.902-0.997-2.864-1.474c-0.766-0.38-1.541-0.74-2.313-1.107c-0.819-0.389-1.637-0.782-2.462-1.157
-                                                    c-0.84-0.381-1.687-0.744-2.533-1.11c-0.773-0.334-1.546-0.67-2.324-0.991c-0.87-0.359-1.745-0.704-2.621-1.047
-                                                    c-0.777-0.304-1.555-0.606-2.336-0.898c-0.867-0.324-1.738-0.637-2.611-0.944c-0.819-0.289-1.639-0.571-2.463-0.846
-                                                    c-0.836-0.279-1.674-0.552-2.516-0.817c-0.897-0.283-1.798-0.553-2.7-0.82c-0.775-0.228-1.549-0.456-2.328-0.672
-                                                    c-1.017-0.283-2.039-0.548-3.062-0.81c-0.479-0.123-0.955-0.262-1.437-0.381l-0.113-80.878L254.141,82.976z M287.923,327.029
-                                                    l-61.125-7.037l-5.759-0.663l-0.118-83.911l66.874-0.094L287.923,327.029z M491.673,348.41l-101.511,91.298
-                                                    c-8.459,6.859-18.606,11.396-29.361,13.122l-157.213,22.662c-0.033,0.005-0.065,0.01-0.098,0.015l-0.109,0.017
-                                                    c-4.763,0.754-9.723,0.436-14.744-0.942L76.746,432.21V294.77h12.505c10.645,0,21.218,1.229,31.514,3.616
-                                                    c0.383,0.089,0.765,0.18,1.147,0.272c1.265,0.305,2.527,0.619,3.783,0.959c0.11,0.03,0.219,0.062,0.329,0.092
-                                                    c1.259,0.344,2.513,0.707,3.763,1.086c0.224,0.068,0.449,0.135,0.672,0.204c1.33,0.411,2.654,0.84,3.971,1.29
-                                                    c0.136,0.047,0.271,0.095,0.407,0.142c2.743,0.947,5.459,1.98,8.141,3.098c0.146,0.061,0.292,0.122,0.438,0.184
-                                                    c1.337,0.562,2.666,1.143,3.986,1.747c0.035,0.016,0.071,0.033,0.106,0.05c1.276,0.586,2.543,1.194,3.802,1.819
-                                                    c0.148,0.073,0.297,0.145,0.445,0.219c1.23,0.615,2.45,1.252,3.663,1.904c0.229,0.123,0.457,0.249,0.686,0.373
-                                                    c1.224,0.667,2.441,1.347,3.646,2.052c17.391,10.173,36.323,16.762,56.271,19.585c0.063,0.009,0.125,0.017,0.188,0.024
-                                                    l81.881,9.427c0.453,0.065,0.903,0.14,1.35,0.224c12.054,2.264,21.568,11.171,24.751,22.77c0.472,1.718,0.804,3.496,0.986,5.319
-                                                    l0.325,3.27l-153.46-13.445c-4.018-0.351-7.566,2.622-7.918,6.642c-0.353,4.021,2.622,7.566,6.642,7.918l162.242,14.215
-                                                    c0.039,0.003,0.077,0.002,0.115,0.005c0.038,0.003,0.075,0.009,0.114,0.012l30.597,1.717c0.137,0.008,0.273,0.011,0.409,0.011
-                                                    c0.145,0,0.288-0.023,0.432-0.032c0.163-0.01,0.326-0.016,0.488-0.036c0.218-0.028,0.431-0.075,0.645-0.122
-                                                    c0.153-0.034,0.307-0.059,0.457-0.103c0.234-0.067,0.459-0.158,0.686-0.249c0.122-0.049,0.248-0.086,0.368-0.142
-                                                    c0.341-0.158,0.673-0.34,0.989-0.552l25.972-17.381c0.001-0.001,0.002-0.002,0.003-0.003l76.702-51.332
-                                                    c7.717-5.187,18.251-3.152,23.482,4.536C499.249,333.181,498.062,342.736,491.673,348.41z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
-
-                                <div class="who-text">
-                                    <h5>Buy or rent properties</h5>
-
-                                    <p>
-                                        Millions of houses and apartments in
-                                        your favourite cities
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="who-item">
-                                <div class="who-pic">
-                                    <svg viewBox="0 0 64 64" class="who-icon">
-                                        <path
-                                            d="m54.165 29.714c-.826-.693-2.009-.739-2.882-.11l-.979.706c-.179-.435-.49-.812-.906-1.078-.76-.485-1.711-.496-2.484-.023-.404.248-.72.606-.875.96l-2.223 3.983c-.297-.216-.689-.266-1.029-.097l-5.455 2.721-8.532-11.376c-.122-.163-.291-.285-.483-.349l-3.859-1.286c.946-.312 1.777-.925 2.345-1.777.77-1.151.967-2.623.528-3.938l-.274-.824c-.086-.259-.13-.527-.13-.798v-7.466c2.361-2.296 2.954-5.603 2.986-5.798.049-.29-.033-.586-.224-.811-.19-.224-.469-.353-.763-.353h-10.989c-.838-.006-8.297-.016-10.979 2.637-.675.668-1.032 1.485-1.032 2.363 0 6.111 2.938 14.018 3.063 14.352.147.39.521.648.937.648.011 0 .022 0 .033-.001.281-.009.53-.143.708-.344l1.347 1.796-6.259 1.58c-.402.102-.7.442-.748.855l-3 26c-.033.283.057.566.247.779.189.213.461.335.746.335v3c0 1.654 1.346 3 3 3h3v3h2v-7h2.926c.553 0 1-.447 1-1v-5h6.074v5c0 .553.447 1 1 1h2v7h2v-7h.926c.553 0 1-.447 1-1v-15.6l7.37 7.31c.282.282.708.366 1.077.218l11.783-4.731c.299-.12.521-.377.598-.689.036-.148.036-.299.005-.444 1.551-.775 3.602-2.089 4.552-3.215l2.359-2.793c.404-.479.599-1.085.546-1.709s-.345-1.19-.823-1.594zm-29.007-11.856.275.825c.244.732.134 1.553-.295 2.194-.467.704-1.251 1.123-2.096 1.123h-9.616l-1.969-2.625 2.216-7.387c1.597-.039 5.495-.217 9.449-1.008.664-.133 1.26-.344 1.804-.606v6.054c0 .486.078.967.232 1.43zm-6.292 14.026-.94 1.88-.94-1.88.94-3.761zm-10.94-24.884c0-.218.046-.552.438-.94 1.72-1.701 7.155-2.061 9.366-2.061.067 0 .134 0 .195.001h9.698c-.543 1.62-1.899 4.421-4.895 5.02-4.837.967-9.753.98-9.802.98-.441 0-.831.29-.958.713l-2.089 6.964c-.854-2.82-1.953-7.139-1.953-10.677zm1.074 50h-3c-.552 0-1-.448-1-1v-3h3v1c0 .553.447 1 1 1zm3.926-4h-2.926v-16h-2v14h-3.878l2.792-24.199 6.012-1.518zm2-6v-23h1.97l-1.939 7.758c-.059.231-.031.476.075.689l2 4c.169.339.515.553.894.553s.725-.214.895-.553l2-4c.106-.214.134-.458.075-.689l-1.94-7.758h2.044v23zm21.311-3.173-8.607-8.537c-.287-.284-.717-.367-1.089-.213-.372.155-.615.52-.615.923v17h-2.926v-27.612l4.388 1.462 8.124 10.833-.104.053.893 1.789 6.681-3.332 3.137 3.667zm17.907-11.063-2.359 2.794c-.754.892-2.813 2.218-4.249 2.883l-2.314-2.705 2.602-4.669c.028-.063.075-.117.134-.153.16-.099.296-.039.364.004.067.043.177.144.156.33l-.097.852c-.045.393.146.775.488.976s.77.179 1.09-.052l2.494-1.797c.127-.093.303-.085.422.016l1.229 1.039c.095.079.116.18.12.232.005.052 0 .155-.08.25z"
-                                        />
-                                        <path d="m17 56h2v6h-2z" />
-
-                                        <path
-                                            d="m61.316 15.052-5.316-1.772v-1.28h1c.434 0 .817-.279.951-.69.134-.412-.013-.863-.363-1.118l-2.588-1.882v-5.31c0-.553-.447-1-1-1h-4c-.553 0-1 .447-1 1v.945l-2.412-1.754c-.35-.256-.826-.256-1.176 0l-11 8c-.351.255-.497.706-.363 1.118s.517.691.951.691h1v12h-3v2h4 18 6c.553 0 1-.447 1-1v-9c0-.431-.275-.812-.684-.948zm-15.316-10.816 3.412 2.481c.304.222.706.251 1.042.083.335-.17.546-.515.546-.891v-1.909h2v4.818c0 .32.153.62.412.809l.513.373h-15.85zm2 19.764h-4v-6h4zm2 0v-7c0-.553-.447-1-1-1h-6c-.553 0-1 .447-1 1v7h-4v-12h16v12zm10 0h-4v-8.613l4 1.334z"
-                                        />
-                                    </svg>
-                                </div>
-
-                                <div class="who-text">
-                                    <h5>Experienced agents</h5>
-                                    <p>
-                                        Find an agent who knows your market best
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Who We Are -->
-
-        <section style="margin: 100px 0">
-            <div class="container">
-                <div class="row justify-content-around" style="gap: 2em">
-                    <div class="col-md py-4 bg-white text-center shadow">
-                        <img src="img/Buy_a_home.png" class="size" alt="" />
-
-                        <div>
-                            <h4 class="font-weight-bold mt-2">Buy a home</h4>
-
-                            <p class="my-4 font-300">
-                                With detailed corresponding pictures to follow,
-                                ease of home selections just got better with our
-                                abundant varieties of options that suit your
-                                imaginations of an ideal home.
-                            </p>
-
-                            <button class="btn btn-outline-primary">
-                                Search Homes
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="col-md py-4 bg-white text-center shadow">
-                        <img src="img/sell_a_home.png" class="size" alt="" />
-
-                        <div>
-                            <h4 class="font-weight-bold mt-2">Sell a home</h4>
-
-                            <p class="my-4 font-300">
-                                We make home sales quick and hassle-free while
-                                you get cash offers through "HMG Homes Offers".
-                                If orthodox sales are your favourite, we also
-                                got you covered.
-                            </p>
-
-                            <button
-                                class="btn btn-outline-primary"
-                                onclick="window.location='sell.html'"
-                            >
-                                See your options
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="col-md py-4 bg-white text-center shadow">
-                        <img src="img/rent_a_home.png" class="size" alt="" />
-
-                        <div>
-                            <h4 class="font-weight-bold mt-2">Rent a home</h4>
-
-                            <p class="my-4 font-300">
-                                Your ease of access and comfort is the
-                                quintessence of our online platform. Hence, we
-                                ensure that you can shop, apply and pay rent
-                                online with zero difficulty.
-                            </p>
-
-                            <button class="btn btn-outline-primary">
-                                Find Rentals
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Joint Venture -->
-        <section class="hero-card img-left bg-white">
-            <div class="hero-img">
-                <video autoplay="autoplay" loop="true" muted>
-                    <source
-                        src="videos/Trip through the city.mp4"
-                        type="video/mp4"
-                    />
-                </video>
-            </div>
-
-            <div class="card-content">
-                <header class="align-self-end">
-                    <h2 class="font-weight-bold">
-                        Need a joint Venture? Contact us
-                    </h2>
-
-                    <p>
-                        We work with you hand in hand with your budget and
-                        resources, from medium to large scale. Contact for JV
-                        reviews and approval.
-                    </p>
-                </header>
-
-                <div class="align-self-start">
-                    <div id="mortgageHeroContent">
-                        <a href="#" class="btn btn-primary btn-lg">
-                            Contact us
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Joint Venture -->
-
-        <!-- Local Info -->
-        <section class="hero-card img-right bg-white mt-5 mt-md-0">
-            <div class="hero-img">
-                <video autoplay="autoplay" loop="true" muted>
-                    <source
-                        src="Empty room with a window.mp4"
-                        type="video/mp4"
-                    />
-                </video>
-            </div>
-
-            <div class="card-content">
-                <header class="align-self-end">
-                    <h2 class="font-weight-bold">Get Local Info</h2>
-
-                    <p>
-                        Does it have pet friendly rentals?, What are the crime
-                        rates?, How are the schools?, What are the amenities and
-                        recreation?, How far is the major roads?.
-                    </p>
-                </header>
-
-                <div class="align-self-start">
-                    <div id="mortgageHeroContent">
-                        <a href="#" class="btn btn-primary btn-lg">Find Out</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Local Info -->
-
-        <!-- Stats Section -->
-        <div class="container-fluid">
-            <section class="stats">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="text-white text-center">
-                                <span class="stats-num counter">3</span>
-                                <span class="stats-text">Properties Sold</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
-                            <div class="text-white text-center">
-                                <span class="stats-num counter">3</span>
-                                <span class="stats-text">Opened Houses</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
-                            <div class="text-white text-center">
-                                <span class="stats-num counter">3</span>
-                                <span class="stats-text">Recently Sold</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
-                            <div class="text-white text-center">
-                                <span class="stats-num counter">3</span>
-                                <span class="stats-text">Prices Reduced</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- End stats Section -->
-
-        <div class="container currency-converter">
-            <div class="card currency-wrapper mx-auto">
-                <div class="card-header" style="background-color: #03506f">
-                    <h1 class="text-center text-white">Currency Converter</h1>
-                </div>
-
-                <div class="card-body">
-                    <form id="currencyForm">
-                        <div class="form-group">
-                            <label for="amount" style="font-size: 20px"
-                                >Amount</label
-                            >
-
-                            <input
-                                type="number"
-                                class="form-control"
-                                id="amount"
-                                oninvalid="this.setCustomValidity('Please enter an amount')"
-                                oninput="this.setCustomValidity('')"
-                            />
-
-                            <small class="error-message"></small>
-                        </div>
-
-                        <div
-                            class="
-                                d-block d-lg-flex
-                                align-items-center
-                                justify-content-between
-                            "
-                        >
-                            <div class="form-group">
-                                <label
-                                    for="currency-1"
-                                    style="font-size: 20px"
-                                    class="d-block mb-2"
-                                    >From:&nbsp;</label
-                                >
-
-                                <select
-                                    class="form-control curr-input"
-                                    id="currency-1"
-                                >
-                                    <option value="EUR">EUR</option>
-                                    <option value="GBP">GBP</option>
-                                    <option value="KES">KES</option>
-                                    <option value="NGN">NGN</option>
-                                    <option value="NOK">NOK</option>
-                                    <option value="USD">USD</option>
-                                </select>
-                            </div>
-
-                            <div class="my-4 mb-lg-0">
-                                <i
-                                    class="fa fa-exchange text-primary"
-                                    aria-hidden="true"
-                                    style="font-size: 30px"
-                                ></i>
-                            </div>
-
-                            <div class="form-group">
-                                <label
-                                    for="currency-2"
-                                    style="font-size: 20px"
-                                    class="d-block mb-2"
-                                >
-                                    To:&nbsp;
-                                </label>
-
-                                <select
-                                    class="form-control curr-input"
-                                    id="currency-2"
-                                >
-                                    <option value="EUR">EUR</option>
-                                    <option value="GBP">GBP</option>
-                                    <option value="KES">KES</option>
-                                    <option value="NGN">NGN</option>
-                                    <option value="NOK">NOK</option>
-                                    <option value="USD">USD</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <button class="btn btn-primary btn-block font-20">
-                            Convert
-                        </button>
-                    </form>
-
-                    <p id="result" class="text-center mt-4"></p>
-                </div>
-            </div>
-        </div>
 
         <!-- Footer -->
         <footer class="footer-section">
@@ -1154,6 +778,7 @@
         <script src="js/main.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/currency.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY"></script>
         <script>
             $(document).ready(function () {
                 $(".counter").counterUp({
@@ -1161,6 +786,71 @@
                     time: 1000,
                 });
             });
+
+            const prices = document.querySelectorAll(".pt-price");
+
+            const usdChangeRate = {
+                AUD: 1.049,
+                EUR: 1.4407,
+                GBP: 1.6424,
+                USD: 24.3,
+            };
+
+            document
+                .querySelector("#countryCurrency")
+                .addEventListener("change", (e) => {
+                    let selectedOption = e.target.value;
+
+                    Array.from(prices).forEach((price, i) => {
+                        console.log(price);
+
+                        const fromCurrency = price
+                            .getAttribute("data-currencyName")
+                            .toUpperCase();
+
+                        if (fromCurrency in usdChangeRate) {
+                            const fromCurrencyToUsdAmount =
+                                parseFloat(price.innerHTML) *
+                                usdChangeRate[fromCurrency];
+
+                            console.log(fromCurrencyToUsdAmount);
+
+                            // const toCurrenyAmount =
+                            //     fromCurrencyToUsdAmount /
+                            //     usdChangeRate[toCurrency];
+
+                            // el.innerHTML =
+                            //     toCurrenyAmount +
+                            //     "<span>" +
+                            //     toCurrency.toUpperCase() +
+                            //     "</span>";
+                            // el.setAttribute("data-currencyName", toCurrency);
+                        }
+                    });
+                });
         </script>
+
+        <!-- <script>
+            navigator.geolocation.getCurrentPosition(
+                getLocation,
+                locationFailed
+            );
+
+            function getLocation(position) {
+                const { latitude, longitude } = position.coords;
+
+                fetch(
+                    `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&result_type=country&key=AIzaSyAqZLupf-E9vgGuwwMiZaTiozSbqKIeWfg`
+                )
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data.results[0].formatted_address);
+                    });
+            }
+
+            function locationFailed() {
+                console.log("Couldn't get your location");
+            }
+        </script> -->
     </body>
 </html>
